@@ -1,0 +1,3781 @@
+=================================================================
+ESM3-FoldX Guided Generation Log
+Run Timestamp: 20251206_184737
+=================================================================
+
+--- RUN PARAMETERS ---
+PDB File: 1HUE.pdb
+Masking Percentage: 20.0%
+Decoding Steps: 48
+Samples per Step: 20
+
+--- SEQUENCE SETUP ---
+Wild-Type Sequence Length: 90
+Original Wild-Type Sequence:
+MNKTELINAVAETSGLSKKDATKAVDAVFDSITEALRKGDKVQLIGFGNFEVRERAARKGRNPQTGEEMEIPASKVPAFKPGKALKDAVK
+
+Masked Template for Generation (18 masks):
+_N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+=================================================================
+
+--- Step 1 Partial Sequences ---
+[Candidate 1] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 2] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 3] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 4] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKVPAFKPGK_LKDAV_
+[Candidate 5] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 6] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 7] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 8] Partial Sequence: _NKTELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 9] Partial Sequence: MN_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 10] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPR___EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 11] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_T__EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 12] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKVPAFKPGK_LKDAV_
+[Candidate 13] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 14] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIPASKV_AFKPGK_LKDAV_
+[Candidate 15] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 16] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 17] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKGDKVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 18] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAVK
+[Candidate 19] Partial Sequence: _N_TELINA_AE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 20] Partial Sequence: _N_TELINA_AEASGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+
+--- FOLDX Log for sequence MNKTELINAVAEASG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13A,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = THRA13 into ALA
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:10 2025
+Total time spend: 21.09 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:19 2025
+Total time spend: 29.79 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Mutating residue = LYSA19 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:19 2025
+Total time spend: 29.82 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:19 2025
+Total time spend: 30.04 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.73 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.73 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.91 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.86 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.84 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 35.04 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.93 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.85 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 35.17 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 35.17 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 35.19 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 35.14 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.93 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 34.97 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:24 2025
+Total time spend: 35.15 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MNKTELINAVAEKSG... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1HUE_Repair.pdb
+Output: ./1HUE_Repair.log
+
+BackHbond       =               -85.50
+SideHbond       =               -30.29
+Energy_VdW      =               -174.77
+Electro         =               -4.21
+Energy_SolvP    =               236.19
+Energy_SolvH    =               -239.83
+Energy_vdwclash =               12.38
+energy_torsion  =               3.99
+backbone_vdwclash=              106.86
+Entropy_sidec   =               83.18
+Entropy_mainc   =               307.12
+water bonds     =               0.00
+helix dipole    =               -2.85
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.15
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  105.55
+
+Starting BuildModel
+Reading TA13K,KA19A,NA49T,QA64R,PA72A,KA90N;
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate LYSA19 has residue index 18
+Residue to Mutate ASNA49 has residue index 48
+Residue to Mutate GLNA64 has residue index 63
+Residue to Mutate PROA72 has residue index 71
+Residue to Mutate LYSA90 has residue index 89
+Mutating residue = LYSA19 into ALA
+Mutating residue = PROA72 into ALA
+Mutating residue = THRA13 into LYS
+Mutating residue = ASNA49 into THR
+Mutating residue = GLNA64 into ARG
+Mutating residue = LYSA90 into ASN
+Your file run OK
+End time of FoldX: Sat Dec  6 18:48:32 2025
+Total time spend: 42.15 seconds.
+validated file "1HUE_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.5638 | ddG: -0.564 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPRTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.3703 | ddG: -1.370 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIPASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.6069 | ddG: -1.607 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.5638 | ddG: -0.564 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEASGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.0849 | ddG: -1.085 kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 1.7738
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 5.37 s
+  - Scoring (CPU/FoldX):        47.03 s
+  - Total Step Time:              52.41 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIPASKV_AFKPGK_LKDAV_
+[Candidate 2] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 4] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___EEMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 5] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 7] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 8] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 9] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_T__EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 10] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 12] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__G_EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 13] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAVK
+[Candidate 14] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 15] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__G_EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 16] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKVPAFKPGK_LKDAV_
+[Candidate 17] Partial Sequence: _N_TELINAVAE_SGLSKTDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 18] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGK_LKDAVQ
+[Candidate 19] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__G_EMEI_ASKV_AFKPGK_LKDAV_
+[Candidate 20] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP____EMEI_ASKV_AFKPGK_LKDAV_
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIPASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.6069 | ddG: -1.607 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.5638 | ddG: -0.564 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.5638 | ddG: -0.564 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.5638 | ddG: -0.564 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKTDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.5295 | ddG: -1.529 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVQ
+  pTM: N/A
+  Score: 1.6069 | ddG: -1.607 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 1.7738
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 2.70 s
+  - Scoring (CPU/FoldX):        43.75 s
+  - Total Step Time:              46.45 s
+
+--- Step 3 Partial Sequences ---
+[Candidate 1] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIPASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: _N_TELINAVAEKSGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: _N_TELINAVAE_SGLSKKDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 8] Partial Sequence: _N_TELINAVAEKSGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: _N_TELINAVAEKSGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 10] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 11] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKVPAFKPGKALKDAV_
+[Candidate 14] Partial Sequence: _N_TELINAVAEKSGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: _N_TELINAVAE_SGLSKADATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__G_EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 18] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP____EMEI_ASKV_AFKPGKALKDAV_
+[Candidate 20] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEI_ASKV_AFKPGKALKDAV_
+
+--- Step 3 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIPASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.6069 | ddG: -1.607 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKKDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7135 | ddG: -1.713 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+------------------------- Step 3 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 1.7738
+This sequence will be used as the template for Step 4.
+-----------------------------------------------------------------
+Timing for Step 3:
+  - Candidate Generation (GPU): 2.71 s
+  - Scoring (CPU/FoldX):        26.43 s
+  - Total Step Time:              29.15 s
+
+--- Step 4 Partial Sequences ---
+[Candidate 1] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAVK
+[Candidate 3] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKVPAFKPGKALKDAV_
+[Candidate 4] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKVPAFKPGKALKDAV_
+[Candidate 8] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_T__EMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 10] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 11] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKGDKVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ___EMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_N__EMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKVPAFKPGKALKDAV_
+[Candidate 18] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKVPAFKPGKALKDAV_
+[Candidate 19] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__G_EMEIAASKV_AFKPGKALKDAV_
+[Candidate 20] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKGDKVQLIGFG_FEVRE_A_RK_RNP____EMEIAASKV_AFKPGKALKDAV_
+
+--- Step 4 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.5638 | ddG: -0.564 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQNGAEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.0497 | ddG: -1.050 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGEEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.7738 | ddG: -1.774 kcal/mol
+
+------------------------- Step 4 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 1.8576
+This sequence will be used as the template for Step 5.
+-----------------------------------------------------------------
+Timing for Step 4:
+  - Candidate Generation (GPU): 2.70 s
+  - Scoring (CPU/FoldX):        46.26 s
+  - Total Step Time:              48.96 s
+
+--- Step 5 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKGDKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: _N_TELINAVAE_SGLSKADATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAVN
+[Candidate 10] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 18] Partial Sequence: _NKTELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 20] Partial Sequence: _N_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+
+--- Step 5 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+------------------------- Step 5 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 1.8576
+This sequence will be used as the template for Step 6.
+-----------------------------------------------------------------
+Timing for Step 5:
+  - Candidate Generation (GPU): 2.52 s
+  - Scoring (CPU/FoldX):        4.36 s
+  - Total Step Time:              6.88 s
+
+--- Step 6 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKGDKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAEKSGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVAAFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAVK
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSK_DATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRERA_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+
+--- Step 6 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVAAFKPGKALKDAVN
+  pTM: N/A
+  Score: -0.3119 | ddG: 0.312 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 0.6476 | ddG: -0.648 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKADATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.8576 | ddG: -1.858 kcal/mol
+
+------------------------- Step 6 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.1757
+This sequence will be used as the template for Step 7.
+-----------------------------------------------------------------
+Timing for Step 6:
+  - Candidate Generation (GPU): 2.49 s
+  - Scoring (CPU/FoldX):        49.92 s
+  - Total Step Time:              52.41 s
+
+--- Step 7 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_AARK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAVK
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAVK
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKG_KVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+
+--- Step 7 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.1343 | ddG: -1.134 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.1343 | ddG: -1.134 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGDKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1757 | ddG: -2.176 kcal/mol
+
+------------------------- Step 7 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.1788
+This sequence will be used as the template for Step 8.
+-----------------------------------------------------------------
+Timing for Step 7:
+  - Candidate Generation (GPU): 2.53 s
+  - Scoring (CPU/FoldX):        57.67 s
+  - Total Step Time:              60.20 s
+
+--- Step 8 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAETSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAVK
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP__KKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAEGSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAENSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERA_RK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_A_RK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+
+--- Step 8 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAETSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 0.3316 | ddG: -0.332 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.2475 | ddG: -1.248 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTKKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 0.3349 | ddG: -0.335 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEGSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 0.5208 | ddG: -0.521 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAENSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.3977 | ddG: -1.398 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAARKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.1788 | ddG: -2.179 kcal/mol
+
+------------------------- Step 8 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 9.
+-----------------------------------------------------------------
+Timing for Step 8:
+  - Candidate Generation (GPU): 2.52 s
+  - Scoring (CPU/FoldX):        66.42 s
+  - Total Step Time:              68.94 s
+
+--- Step 9 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP__GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAVN
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP_T_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP___KEMEIAASKVAAFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNP___KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRK_RNP___KEMEIAASKV_AFKPGKALKDAV_
+
+--- Step 9 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVAAFKPGKALKDAVN
+  pTM: N/A
+  Score: 0.1504 | ddG: -0.150 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 9 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 10.
+-----------------------------------------------------------------
+Timing for Step 9:
+  - Candidate Generation (GPU): 2.47 s
+  - Scoring (CPU/FoldX):        72.46 s
+  - Total Step Time:              74.94 s
+
+--- Step 10 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ_KKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ_GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAVN
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAVN
+[Candidate 13] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQT_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRK_RNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRK_RNPQ_GKEMEIAASKV_AFKPGKALKDAV_
+
+--- Step 10 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTKKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 0.5861 | ddG: -0.586 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 10 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 11.
+-----------------------------------------------------------------
+Timing for Step 10:
+  - Candidate Generation (GPU): 2.44 s
+  - Scoring (CPU/FoldX):        64.93 s
+  - Total Step Time:              67.37 s
+
+--- Step 11 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAVN
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAVK
+[Candidate 10] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQT_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQT_KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAVQ
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKV_AFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAESSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAENSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKV_AFKPGKALKDAVN
+
+--- Step 11 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVQ
+  pTM: N/A
+  Score: 2.2639 | ddG: -2.264 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAESSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.2197 | ddG: -1.220 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAENSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 1.6141 | ddG: -1.614 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 11 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 12.
+-----------------------------------------------------------------
+Timing for Step 11:
+  - Candidate Generation (GPU): 2.60 s
+  - Scoring (CPU/FoldX):        65.60 s
+  - Total Step Time:              68.20 s
+
+--- Step 12 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRE_AKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRE_AKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+
+--- Step 12 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 12 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 13.
+-----------------------------------------------------------------
+Timing for Step 12:
+  - Candidate Generation (GPU): 2.50 s
+  - Scoring (CPU/FoldX):        4.55 s
+  - Total Step Time:              7.05 s
+
+--- Step 13 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MNKTELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 11] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 15] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 20] Partial Sequence: MN_TELINAVAE_SGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+
+--- Step 13 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 13 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 14.
+-----------------------------------------------------------------
+Timing for Step 13:
+  - Candidate Generation (GPU): 2.48 s
+  - Scoring (CPU/FoldX):        4.45 s
+  - Total Step Time:              6.93 s
+
+--- Step 14 Partial Sequences ---
+[Candidate 1] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 3] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 9] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 11] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 12] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 13] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVQ
+[Candidate 14] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 18] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFG_FEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+
+--- Step 14 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVQ
+  pTM: N/A
+  Score: 2.2639 | ddG: -2.264 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 14 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 15.
+-----------------------------------------------------------------
+Timing for Step 14:
+  - Candidate Generation (GPU): 2.53 s
+  - Scoring (CPU/FoldX):        4.49 s
+  - Total Step Time:              7.03 s
+
+--- Step 15 Partial Sequences ---
+[Candidate 1] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 2] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_DKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 5] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 8] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVQ
+[Candidate 9] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 10] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 11] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVE
+[Candidate 13] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 15] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 16] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 17] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 19] Partial Sequence: MN_TELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAV_
+
+--- Step 15 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTDKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 0.4802 | ddG: -0.480 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVQ
+  pTM: N/A
+  Score: 2.2639 | ddG: -2.264 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVE
+  pTM: N/A
+  Score: 2.0715 | ddG: -2.072 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+------------------------- Step 15 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+Best Score in Step (=-ΔΔG): 2.4135
+This sequence will be used as the template for Step 16.
+-----------------------------------------------------------------
+Timing for Step 15:
+  - Candidate Generation (GPU): 2.50 s
+  - Scoring (CPU/FoldX):        64.13 s
+  - Total Step Time:              66.64 s
+
+--- Step 16 Partial Sequences ---
+[Candidate 1] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 2] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 3] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 4] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVN
+[Candidate 5] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 6] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 7] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 8] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 9] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 10] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+[Candidate 11] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 12] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAV_
+[Candidate 13] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 14] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 15] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 16] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 17] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 18] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVA
+[Candidate 19] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAV_
+[Candidate 20] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ__KEMEIAASKVPAFKPGKALKDAVK
+
+--- Step 16 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVA
+  pTM: N/A
+  Score: 2.2811 | ddG: -2.281 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVN
+  pTM: N/A
+  Score: 2.4135 | ddG: -2.414 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVK
+  pTM: N/A
+  Score: 1.5210 | ddG: -1.521 kcal/mol
+
+------------------------- Step 16 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+Best Score in Step (=-ΔΔG): 2.4220
+This sequence will be used as the template for Step 17.
+-----------------------------------------------------------------
+Timing for Step 16:
+  - Candidate Generation (GPU): 2.45 s
+  - Scoring (CPU/FoldX):        59.22 s
+  - Total Step Time:              61.67 s
+
+--- Step 17 Partial Sequences ---
+[Candidate 1] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 2] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 3] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 4] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 5] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 6] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 7] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQS_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 8] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 9] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 10] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 11] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 12] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 13] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 14] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 15] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 16] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 17] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+[Candidate 18] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 19] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQ_GKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 20] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQT_KEMEIAASKVPAFKPGKALKDAVS
+
+--- Step 17 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQSGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.3415 | ddG: -2.342 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+------------------------- Step 17 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+Best Score in Step (=-ΔΔG): 2.4220
+This sequence will be used as the template for Step 18.
+-----------------------------------------------------------------
+Timing for Step 17:
+  - Candidate Generation (GPU): 2.46 s
+  - Scoring (CPU/FoldX):        58.69 s
+  - Total Step Time:              61.15 s
+
+--- Step 18 Partial Sequences ---
+[Candidate 1] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 2] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 3] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 4] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 5] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 6] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 7] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 8] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 9] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 10] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 11] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 12] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 13] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 14] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 15] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 16] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 17] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 18] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 19] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+[Candidate 20] Partial Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+
+--- Step 18 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+  pTM: N/A
+  Score: 2.4220 | ddG: -2.422 kcal/mol
+
+------------------------- Step 18 Summary -------------------------
+Best Candidate in Step:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+Best Score in Step (=-ΔΔG): 2.4220
+This sequence will be used as the template for Step 19.
+-----------------------------------------------------------------
+Timing for Step 18:
+  - Candidate Generation (GPU): 2.57 s
+  - Scoring (CPU/FoldX):        4.93 s
+  - Total Step Time:              7.50 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 18) ---
+Score (=-ΔΔG): 2.4220
+FoldX ΔΔG vs. Wild-Type: -2.4220 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 16
+Optimized Sequence:
+MNKTELINAVAEKSGLSKQDATKAVDAVFDSITEALRKGEKVQLIGFGTFEVRERAKRKGRNPQTGKEMEIAASKVPAFKPGKALKDAVS
+
+Final Score (=-ΔΔG): 2.4220
+Final FoldX ΔΔG vs. Wild-Type: -2.4220 kcal/mol
+===================================

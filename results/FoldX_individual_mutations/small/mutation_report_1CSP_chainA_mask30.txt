@@ -1,0 +1,22 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 1CSP.pdb
+Chain: A
+
+Wildtype:  MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVTKEA
+Optimized: MKEGKVKWFNSTKGFGFIEVEGQDDVFVHFSAINGEGFKSLEEGQAVSFEIVQGNRGPQAQNVTKEA
+
+Total mutations: 6
+ESM3-FoldX combined ΔΔG: -1.787 kcal/mol
+Sum of individual ΔΔG: -1.766 kcal/mol
+Epistasis: 0.021 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG      Effect  ThermoMPNN_ddG  Difference
+        2     L      K      L2K   0.317043     Neutral          1.1502   -0.833157
+       12     E      T     E12T  -0.117236     Neutral          0.3788   -0.496036
+       34     Q      N     Q34N   0.227142     Neutral          0.7994   -0.572258
+       40     T      S     T40S  -1.081900 Stabilizing          0.0047   -1.086600
+       53     E      Q     E53Q  -0.895984     Neutral          0.1786   -1.074584
+       61     A      Q     A61Q  -0.215146     Neutral          0.6037   -0.818846

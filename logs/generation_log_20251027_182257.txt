@@ -354,3 +354,362 @@ Cleaning BuildModel...DONE
 STDERR:
 
 ---------------------------------------------------
+
+--- FOLDX Log for sequence SMKAFAAGTKVLTAK... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 2lwy_Repair.pdb
+Output: ./2lwy_Repair.log
+
+BackHbond       =               -79.47
+SideHbond       =               -29.74
+Energy_VdW      =               -150.17
+Electro         =               -2.93
+Energy_SolvP    =               194.22
+Energy_SolvH    =               -207.56
+Energy_vdwclash =               1.99
+energy_torsion  =               1.54
+backbone_vdwclash=              44.41
+Entropy_sidec   =               74.91
+Entropy_mainc   =               206.21
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.72
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  9.72
+
+Starting BuildModel
+Reading VA3A,MA7K,IA8V,TA12K,IA27L,AA28S,NA30D,EA32A,TA44S,VA46E,RA47Y,LA52V,HA54S,LA55I,TA56K,GA59N,TA64C,FA66P,YA71W,KA73V,VA75K,FA77W,QA84K,VA85A,LA90I,VA96P,LA97V,KA102E,IA106K,AA107L,VA111I,KA117E,DA119E,HA125F,DA128E,EA130G;
+Residue to Mutate VALA3 has residue index 6
+Residue to Mutate META7 has residue index 10
+Residue to Mutate ILEA8 has residue index 11
+Residue to Mutate THRA12 has residue index 15
+Residue to Mutate ILEA27 has residue index 30
+Residue to Mutate ALAA28 has residue index 31
+Residue to Mutate ASNA30 has residue index 33
+Residue to Mutate GLUA32 has residue index 35
+Residue to Mutate THRA44 has residue index 47
+Residue to Mutate VALA46 has residue index 49
+Residue to Mutate ARGA47 has residue index 50
+Residue to Mutate LEUA52 has residue index 55
+Residue to Mutate HISA54 has residue index 57
+Residue to Mutate LEUA55 has residue index 58
+Residue to Mutate THRA56 has residue index 59
+Residue to Mutate GLYA59 has residue index 62
+Residue to Mutate THRA64 has residue index 67
+Residue to Mutate PHEA66 has residue index 69
+Residue to Mutate TYRA71 has residue index 74
+Residue to Mutate LYSA73 has residue index 76
+Residue to Mutate VALA75 has residue index 78
+Residue to Mutate PHEA77 has residue index 80
+Residue to Mutate GLNA84 has residue index 87
+Residue to Mutate VALA85 has residue index 88
+Residue to Mutate LEUA90 has residue index 93
+Residue to Mutate VALA96 has residue index 99
+Residue to Mutate LEUA97 has residue index 100
+Residue to Mutate LYSA102 has residue index 105
+Residue to Mutate ILEA106 has residue index 109
+Residue to Mutate ALAA107 has residue index 110
+Residue to Mutate VALA111 has residue index 114
+Residue to Mutate LYSA117 has residue index 120
+Residue to Mutate ASPA119 has residue index 122
+Residue to Mutate HISA125 has residue index 128
+Residue to Mutate ASPA128 has residue index 131
+Residue to Mutate GLUA130 has residue index 133
+Mutating residue = VALA3 into ALA
+Mutating residue = ILEA8 into VAL
+Mutating residue = ILEA27 into LEU
+Mutating residue = GLUA32 into ALA
+Mutating residue = ARGA47 into TYR
+Mutating residue = LEUA52 into VAL
+Mutating residue = LEUA55 into ILE
+Mutating residue = THRA64 into CYS
+Mutating residue = PHEA66 into PRO
+Mutating residue = TYRA71 into TRP
+Mutating residue = LYSA73 into VAL
+Mutating residue = PHEA77 into TRP
+Mutating residue = VALA85 into ALA
+Mutating residue = LEUA90 into ILE
+Mutating residue = VALA96 into PRO
+Mutating residue = LEUA97 into VAL
+Mutating residue = ALAA107 into LEU
+Mutating residue = VALA111 into ILE
+Mutating residue = H1SA125 into PHE
+Mutating residue = GLUA130 into GLY
+Mutating residue = META7 into LYS
+Mutating residue = THRA12 into LYS
+Mutating residue = ALAA28 into SER
+Mutating residue = ASNA30 into ASP
+Mutating residue = THRA44 into SER
+Mutating residue = VALA46 into GLU
+Mutating residue = H2SA54 into SER
+Mutating residue = THRA56 into LYS
+Mutating residue = GLYA59 into ASN
+Mutating residue = VALA75 into LYS
+Mutating residue = GLNA84 into LYS
+Mutating residue = LYSA102 into GLU
+Mutating residue = ILEA106 into LYS
+Mutating residue = LYSA117 into GLU
+Mutating residue = ASPA119 into GLU
+Mutating residue = ASPA128 into GLU
+Your file run OK
+End time of FoldX: Mon Oct 27 18:30:49 2025
+Total time spend: 433.31 seconds.
+validated file "2lwy_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence SSKAFTAGTKVLTAK... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 2lwy_Repair.pdb
+Output: ./2lwy_Repair.log
+
+BackHbond       =               -79.47
+SideHbond       =               -29.74
+Energy_VdW      =               -150.17
+Electro         =               -2.93
+Energy_SolvP    =               194.22
+Energy_SolvH    =               -207.56
+Energy_vdwclash =               1.99
+energy_torsion  =               1.54
+backbone_vdwclash=              44.41
+Entropy_sidec   =               74.91
+Entropy_mainc   =               206.21
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.72
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  9.72
+
+Starting BuildModel
+Reading MA-2S,VA3T,MA7K,IA8V,TA12K,IA27L,AA28S,NA30D,EA32A,TA44V,VA46E,RA47H,TA50D,LA52V,HA54S,LA55V,TA56K,FA66P,YA71F,VA75K,FA77W,VA78I,QA84E,VA85A,DA91T,VA96L,LA97E,KA102V,LA104E,IA106K,AA107F,KA117E,DA119E,HA125F,DA128E,NA129A,EA130G;
+Residue to Mutate META-2 has residue index 1
+Residue to Mutate VALA3 has residue index 6
+Residue to Mutate META7 has residue index 10
+Residue to Mutate ILEA8 has residue index 11
+Residue to Mutate THRA12 has residue index 15
+Residue to Mutate ILEA27 has residue index 30
+Residue to Mutate ALAA28 has residue index 31
+Residue to Mutate ASNA30 has residue index 33
+Residue to Mutate GLUA32 has residue index 35
+Residue to Mutate THRA44 has residue index 47
+Residue to Mutate VALA46 has residue index 49
+Residue to Mutate ARGA47 has residue index 50
+Residue to Mutate THRA50 has residue index 53
+Residue to Mutate LEUA52 has residue index 55
+Residue to Mutate HISA54 has residue index 57
+Residue to Mutate LEUA55 has residue index 58
+Residue to Mutate THRA56 has residue index 59
+Residue to Mutate PHEA66 has residue index 69
+Residue to Mutate TYRA71 has residue index 74
+Residue to Mutate VALA75 has residue index 78
+Residue to Mutate PHEA77 has residue index 80
+Residue to Mutate VALA78 has residue index 81
+Residue to Mutate GLNA84 has residue index 87
+Residue to Mutate VALA85 has residue index 88
+Residue to Mutate ASPA91 has residue index 94
+Residue to Mutate VALA96 has residue index 99
+Residue to Mutate LEUA97 has residue index 100
+Residue to Mutate LYSA102 has residue index 105
+Residue to Mutate LEUA104 has residue index 107
+Residue to Mutate ILEA106 has residue index 109
+Residue to Mutate ALAA107 has residue index 110
+Residue to Mutate LYSA117 has residue index 120
+Residue to Mutate ASPA119 has residue index 122
+Residue to Mutate HISA125 has residue index 128
+Residue to Mutate ASPA128 has residue index 131
+Residue to Mutate ASNA129 has residue index 132
+Residue to Mutate GLUA130 has residue index 133
+Mutating residue = ILEA8 into VAL
+Mutating residue = ILEA27 into LEU
+Mutating residue = GLUA32 into ALA
+Mutating residue = THRA44 into VAL
+Mutating residue = ARGA47 into HIS
+Mutating residue = LEUA52 into VAL
+Mutating residue = LEUA55 into VAL
+Mutating residue = PHEA66 into PRO
+Mutating residue = TYRA71 into PHE
+Mutating residue = PHEA77 into TRP
+Mutating residue = VALA78 into ILE
+Mutating residue = VALA85 into ALA
+Mutating residue = VALA96 into LEU
+Mutating residue = LYSA102 into VAL
+Mutating residue = ALAA107 into PHE
+Mutating residue = H1SA125 into PHE
+Mutating residue = ASNA129 into ALA
+Mutating residue = GLUA130 into GLY
+Mutating residue = META-2 into SER
+Mutating residue = VALA3 into THR
+Mutating residue = META7 into LYS
+Mutating residue = THRA12 into LYS
+Mutating residue = ALAA28 into SER
+Mutating residue = ASNA30 into ASP
+Mutating residue = VALA46 into GLU
+Mutating residue = THRA50 into ASP
+Mutating residue = H2SA54 into SER
+Mutating residue = THRA56 into LYS
+Mutating residue = VALA75 into LYS
+Mutating residue = GLNA84 into GLU
+Mutating residue = ASPA91 into THR
+Mutating residue = LEUA97 into GLU
+Mutating residue = LEUA104 into GLU
+Mutating residue = ILEA106 into LYS
+Mutating residue = LYSA117 into GLU
+Mutating residue = ASPA119 into GLU
+Mutating residue = ASPA128 into GLU
+Your file run OK
+End time of FoldX: Mon Oct 27 18:32:16 2025
+Total time spend: 519.20 seconds.
+validated file "2lwy_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: SGKAFAAGTKILTAKGLVAIENIKAGDKVLATDPETFEVAEKTVLETYVGETDELLSLKIGDEVIKTTPDHPFFVNDKGWVEAGKLAKGDRLLDSRGNWLVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGELGVLVHN
+  pTM: N/A
+  Score: -6.8543 | ddG: 6.854 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: SMKAFVAGTLVLTAKGLVAIENVKAGDKVYSTNPETFEVAEKTVLETYVGETKELLSIKIGDEVIKTTSDHPFWVVDKGWVEAGKLKVGDKLLDSRGNEVVVEEIKKEKLDKPVKVYNFEVQDFHTYFVGANRVLVHN
+  pTM: N/A
+  Score: -8.3873 | ddG: 8.387 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: SMKAFAAGTKVLTAKGLVAIENIKAGDKVLSTDPATFEVAEKTVLESYEYETTEVLSIKIGNEVIKCTPDHPFWVVDKGWVEAGKLKAGDKLIDSRGNPVVVEEEKLEKLDKPIKVYNFEVEDFHTYFVGENGVLVHN
+  pTM: N/A
+  Score: -7.7660 | ddG: 7.766 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: SGKAFVAGTEVLTAKGLVAIENIQAGDKVVSTDPETFEVAEKTVLEVYQMETDELLLLRIGDEVIKTTPDHPFFVPDRGWVEAGKLKVGDELLHSRGNMAVVEEIKEEKADKPTKVYNFEVEDFHTYFVGELGVLVHN
+  pTM: N/A
+  Score: -14.4882 | ddG: 14.488 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: SSKAFTAGTKVLTAKGLVAIENIKAGDKVLSTDPATFEVAEKTVLEVYEHETDEVLSVKIGGEVIKTTPDHPFFVKDKGWIEAGKLEAGDKLLTSRGNLEVVEEVKEEKFDKPVKVYNFEVEDFHTYFVGEAGVLVHN
+  pTM: N/A
+  Score: -9.8952 | ddG: 9.895 kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+SGKAFAAGTKILTAKGLVAIENIKAGDKVLATDPETFEVAEKTVLETYVGETDELLSLKIGDEVIKTTPDHPFFVNDKGWVEAGKLAKGDRLLDSRGNWLVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGELGVLVHN
+Best Score in Step (=-ΔΔG): -6.8543
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 11.24 s
+  - Scoring (CPU/FoldX):        542.56 s
+  - Total Step Time:              553.88 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: SRKAFAAGTKILTAKGLVAIENIKAGDKVRATDPETFKVAEKTVLETYVQETDFILSLKIGDEVIKTTPDHPFFVNDKGWVEAGKLAKGDRLLDSRGNWVVVEEMKNEKLDKPVKVWNFVVEDFHTYNVGKAGVLVHN
+[Candidate 2] Partial Sequence: SIKAFAAGTKILTAEGLVAIENIKAGDKVLATDLETFKVAEKTVLETYKFETDSILSIKIGDEVIKTTPDHPFFVNDQGWVEAGKLAKGDRILHSRGNWLVVEEMKNETLDKPVKVYNFVVEDFHTYNVGKNGVLVHN
+[Candidate 3] Partial Sequence: SSKAFAAGTKILTAKGLVAIENIKAGDKVIATDPETFEVAEKTVLETYTGETDHLLAAKIGNEVIKVTPDHPFLVNDGGWVEAGKLAKGDRLLLSRGNWHVVEEMKNETLDKPVKVYNFVVEDFHTYNVGKRGVLVHN
+[Candidate 4] Partial Sequence: SQKAFAAGTKILTARGLVAIENIKAGDKVIATDIETFEVAEKTVLETYNAETDTLLNLKIGEEVIKTTPDHPFWVNDKGWVEAGKLAKGDRVRDSRGNWMVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGNTKVLVHN
+[Candidate 5] Partial Sequence: SAKAFAAGTKILTANGLVAIENIKAGDKVKATDPETFTVAEKTVLETYSSETDRILELKIGGEVIKTTPDHPFYVNDRGWVEAGKLAKGDRMITSRGNWAVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGEAGVLVHN
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: SRKAFAAGTKILTAKGLVAIENIKAGDKVRATDPETFKVAEKTVLETYVQETDFILSLKIGDEVIKTTPDHPFFVNDKGWVEAGKLAKGDRLLDSRGNWVVVEEMKNEKLDKPVKVWNFVVEDFHTYNVGKAGVLVHN
+  pTM: N/A
+  Score: -9.5475 | ddG: 9.547 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: SIKAFAAGTKILTAEGLVAIENIKAGDKVLATDLETFKVAEKTVLETYKFETDSILSIKIGDEVIKTTPDHPFFVNDQGWVEAGKLAKGDRILHSRGNWLVVEEMKNETLDKPVKVYNFVVEDFHTYNVGKNGVLVHN
+  pTM: N/A
+  Score: -11.1894 | ddG: 11.189 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: SSKAFAAGTKILTAKGLVAIENIKAGDKVIATDPETFEVAEKTVLETYTGETDHLLAAKIGNEVIKVTPDHPFLVNDGGWVEAGKLAKGDRLLLSRGNWHVVEEMKNETLDKPVKVYNFVVEDFHTYNVGKRGVLVHN
+  pTM: N/A
+  Score: -13.9909 | ddG: 13.991 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: SQKAFAAGTKILTARGLVAIENIKAGDKVIATDIETFEVAEKTVLETYNAETDTLLNLKIGEEVIKTTPDHPFWVNDKGWVEAGKLAKGDRVRDSRGNWMVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGNTKVLVHN
+  pTM: N/A
+  Score: -14.4689 | ddG: 14.469 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: SAKAFAAGTKILTANGLVAIENIKAGDKVKATDPETFTVAEKTVLETYSSETDRILELKIGGEVIKTTPDHPFYVNDRGWVEAGKLAKGDRMITSRGNWAVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGEAGVLVHN
+  pTM: N/A
+  Score: -10.9680 | ddG: 10.968 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+SRKAFAAGTKILTAKGLVAIENIKAGDKVRATDPETFKVAEKTVLETYVQETDFILSLKIGDEVIKTTPDHPFFVNDKGWVEAGKLAKGDRLLDSRGNWVVVEEMKNEKLDKPVKVWNFVVEDFHTYNVGKAGVLVHN
+Best Score in Step (=-ΔΔG): -9.5475
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 1.84 s
+  - Scoring (CPU/FoldX):        519.98 s
+  - Total Step Time:              521.91 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 2) ---
+Score (=-ΔΔG): -9.5475
+FoldX ΔΔG vs. Wild-Type: 9.5475 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 1
+Optimized Sequence:
+SGKAFAAGTKILTAKGLVAIENIKAGDKVLATDPETFEVAEKTVLETYVGETDELLSLKIGDEVIKTTPDHPFFVNDKGWVEAGKLAKGDRLLDSRGNWLVVEEMKNEKLDKPVKVYNFVVEDFHTYNVGELGVLVHN
+
+Final Score (=-ΔΔG): -6.8543
+Final FoldX ΔΔG vs. Wild-Type: 6.8543 kcal/mol
+===================================

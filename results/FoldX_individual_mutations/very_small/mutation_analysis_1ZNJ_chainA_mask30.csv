@@ -1,0 +1,4 @@
+Position,WT_AA,Mut_AA,Mutation,FoldX_ddG,Effect,ThermoMPNN_ddG,Difference
+8,T,K,T8K,-0.440594,Neutral,0.6494,-1.089994
+14,Y,D,Y14D,-1.52087,Stabilizing,0.3084,-1.82927
+15,Q,L,Q15L,-0.86805,Neutral,0.8056,-1.6736499999999999

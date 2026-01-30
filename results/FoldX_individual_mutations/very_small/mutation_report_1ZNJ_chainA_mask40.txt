@@ -1,0 +1,20 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 1ZNJ.pdb
+Chain: A
+
+Wildtype:  GIVEQCCTSICSLYQLENYCN
+Optimized: GILEQCCTSICSRTQLETYCN
+
+Total mutations: 4
+ESM3-FoldX combined ΔΔG: -3.141 kcal/mol
+Sum of individual ΔΔG: -2.105 kcal/mol
+Epistasis: 1.036 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG      Effect  ThermoMPNN_ddG  Difference
+        3     V      L      V3L  -2.301020 Stabilizing         -0.0110   -2.290020
+       13     L      R     L13R  -0.304632     Neutral          0.1316   -0.436232
+       14     Y      T     Y14T   0.269966     Neutral          0.2300    0.039966
+       18     N      T     N18T   0.230768     Neutral          0.1539    0.076868

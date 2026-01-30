@@ -1,0 +1,31 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 2ZAJ.pdb
+Chain: A
+
+Wildtype:  GSSGSSGLDSELELPAGWEKIEDPVYGIYYVDHINRKTQYENPSGPSSG
+Optimized: GSSGSSDLDSSDGLPPGWEEIYDPVYGVYYIDHRNRLTTYERPSGPSGH
+
+Total mutations: 15
+ESM3-FoldX combined ΔΔG: -2.971 kcal/mol
+Sum of individual ΔΔG: 2.324 kcal/mol
+Epistasis: 5.294 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG        Effect  ThermoMPNN_ddG  Difference
+        7     G      D      G7D   1.129670 Destabilizing         -0.0405    1.170170
+       11     E      S     E11S   0.167709       Neutral         -0.3924    0.560109
+       12     L      D     L12D   1.181920 Destabilizing          0.3881    0.793820
+       13     E      G     E13G  -0.141935       Neutral          0.5374   -0.679335
+       16     A      P     A16P  -1.045230   Stabilizing         -0.1432   -0.902030
+       20     K      E     K20E   0.678424       Neutral          0.5373    0.141124
+       22     E      Y     E22Y  -0.389679       Neutral         -0.3574   -0.032279
+       28     I      V     I28V   0.357611       Neutral          0.0633    0.294311
+       31     V      I     V31I  -0.457851       Neutral          0.1048   -0.562651
+       34     I      R     I34R  -1.042790   Stabilizing          0.3688   -1.411590
+       37     K      L     K37L   0.773723       Neutral         -0.1429    0.916623
+       39     Q      T     Q39T  -0.985335       Neutral          0.3359   -1.321235
+       42     N      R     N42R   0.672637       Neutral          0.8725   -0.199863
+       48     S      G     S48G  -0.047187       Neutral          0.0773   -0.124487
+       49     G      H     G49H   1.471940 Destabilizing          0.1225    1.349440

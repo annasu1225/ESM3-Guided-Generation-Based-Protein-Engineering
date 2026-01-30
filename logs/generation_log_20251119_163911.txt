@@ -1,0 +1,233 @@
+=================================================================
+ESM3-FoldX Guided Generation Log
+Run Timestamp: 20251119_163911
+=================================================================
+
+--- RUN PARAMETERS ---
+PDB File: 1E0L.pdb
+Masking Percentage: 40.0%
+Decoding Steps: 2
+Samples per Step: 2
+
+--- SEQUENCE SETUP ---
+Wild-Type Sequence Length: 37
+Original Wild-Type Sequence:
+GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK
+
+Masked Template for Generation (14 masks):
+GA_A__EWTEYK__DG___YY_NRT__STW_KP_EL_
+=================================================================
+
+--- Step 1 Partial Sequences ---
+[Candidate 1] Partial Sequence: GA_A__EWTEYK_SDGR_YYYNNRTR_STWNKPAEL_
+[Candidate 2] Partial Sequence: GANA__EWTEYKSPDGK__YY_NRTG_STWEKP_ELQ
+
+--- FOLDX Log for sequence GANAASEWTEYKSPD... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1E0L_Repair.pdb
+Output: ./1E0L_Repair.log
+
+BackHbond       =               -16.22
+SideHbond       =               -9.53
+Energy_VdW      =               -33.04
+Electro         =               -0.33
+Energy_SolvP    =               45.75
+Energy_SolvH    =               -42.44
+Energy_vdwclash =               8.86
+energy_torsion  =               4.16
+backbone_vdwclash=              22.32
+Entropy_sidec   =               19.55
+Entropy_mainc   =               58.37
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  35.12
+
+Starting BuildModel
+Reading TA3N,VA5A,TA13S,AA14P,LA26G,QA34A,KA37Q;
+Residue to Mutate THRA3 has residue index 2
+Residue to Mutate VALA5 has residue index 4
+Residue to Mutate THRA13 has residue index 12
+Residue to Mutate ALAA14 has residue index 13
+Residue to Mutate LEUA26 has residue index 25
+Residue to Mutate GLNA34 has residue index 33
+Residue to Mutate LYSA37 has residue index 36
+Mutating residue = VALA5 into ALA
+Mutating residue = ALAA14 into PRO
+Mutating residue = LEUA26 into GLY
+Mutating residue = GLNA34 into ALA
+Mutating residue = THRA3 into ASN
+Mutating residue = THRA13 into SER
+Mutating residue = LYSA37 into GLN
+Your file run OK
+End time of FoldX: Wed Nov 19 16:39:47 2025
+Total time spend: 20.09 seconds.
+validated file "1E0L_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GAAAASEWTEYKTSD... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1E0L_Repair.pdb
+Output: ./1E0L_Repair.log
+
+BackHbond       =               -16.22
+SideHbond       =               -9.53
+Energy_VdW      =               -33.04
+Electro         =               -0.33
+Energy_SolvP    =               45.75
+Energy_SolvH    =               -42.44
+Energy_vdwclash =               8.86
+energy_torsion  =               4.16
+backbone_vdwclash=              22.32
+Entropy_sidec   =               19.55
+Entropy_mainc   =               58.37
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  35.12
+
+Starting BuildModel
+Reading TA3A,VA5A,AA14S,KA17R,LA26R,EA31N,QA34A,KA37Q;
+Residue to Mutate THRA3 has residue index 2
+Residue to Mutate VALA5 has residue index 4
+Residue to Mutate ALAA14 has residue index 13
+Residue to Mutate LYSA17 has residue index 16
+Residue to Mutate LEUA26 has residue index 25
+Residue to Mutate GLUA31 has residue index 30
+Residue to Mutate GLNA34 has residue index 33
+Residue to Mutate LYSA37 has residue index 36
+Mutating residue = THRA3 into ALA
+Mutating residue = VALA5 into ALA
+Mutating residue = GLNA34 into ALA
+Mutating residue = ALAA14 into SER
+Mutating residue = LYSA17 into ARG
+Mutating residue = LEUA26 into ARG
+Mutating residue = GLUA31 into ASN
+Mutating residue = LYSA37 into GLN
+Your file run OK
+End time of FoldX: Wed Nov 19 16:39:56 2025
+Total time spend: 28.93 seconds.
+validated file "1E0L_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GAAAASEWTEYKTSDGRTYYYNNRTRESTWNKPAELQ
+  pTM: N/A
+  Score: 1.3269 | ddG: -1.327 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GANAASEWTEYKSPDGKTYYYNNRTGESTWEKPAELQ
+  pTM: N/A
+  Score: 5.4005 | ddG: -5.401 kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+GANAASEWTEYKSPDGKTYYYNNRTGESTWEKPAELQ
+Best Score in Step (=-ΔΔG): 5.4005
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 4.42 s
+  - Scoring (CPU/FoldX):        36.38 s
+  - Total Step Time:              40.82 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: GANAGSEWTEYKSPDGKTYYYNNRTGESTWEKPAELQ
+[Candidate 2] Partial Sequence: GANAPSEWTEYKSPDGKIYYYNNRTGESTWEKPEELQ
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GANAGSEWTEYKSPDGKTYYYNNRTGESTWEKPAELQ
+  pTM: N/A
+  Score: 5.2499 | ddG: -5.250 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GANAPSEWTEYKSPDGKIYYYNNRTGESTWEKPEELQ
+  pTM: N/A
+  Score: 3.5007 | ddG: -3.501 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+GANAGSEWTEYKSPDGKTYYYNNRTGESTWEKPAELQ
+Best Score in Step (=-ΔΔG): 5.2499
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 0.25 s
+  - Scoring (CPU/FoldX):        38.62 s
+  - Total Step Time:              38.87 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 2) ---
+Score (=-ΔΔG): 5.2499
+FoldX ΔΔG vs. Wild-Type: -5.2499 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 1
+Optimized Sequence:
+GANAASEWTEYKSPDGKTYYYNNRTGESTWEKPAELQ
+
+Final Score (=-ΔΔG): 5.4005
+Final FoldX ΔΔG vs. Wild-Type: -5.4005 kcal/mol
+===================================

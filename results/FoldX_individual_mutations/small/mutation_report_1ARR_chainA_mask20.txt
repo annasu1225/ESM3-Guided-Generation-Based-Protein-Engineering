@@ -1,0 +1,24 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 1ARR.pdb
+Chain: A
+
+Wildtype:  MKGMSKMPQFNLRWPREVLDLVRKVAEENGRSVNSEIYQRVMESFKKEGRIGA
+Optimized: MEGMSKMPQFILRWPREVLDLVRKVAEQNGRSVNQEIYLRLLRSFKKEGRIGA
+
+Total mutations: 8
+ESM3-FoldX combined ΔΔG: -5.171 kcal/mol
+Sum of individual ΔΔG: -3.506 kcal/mol
+Epistasis: 1.665 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG      Effect  ThermoMPNN_ddG  Difference
+        2     K      E      K2E  -0.489251     Neutral         -0.2186   -0.270651
+       11     N      I     N11I  -0.881393     Neutral          0.0928   -0.974193
+       28     E      Q     E28Q   0.123938     Neutral          0.1804   -0.056462
+       35     S      Q     S35Q  -0.855653     Neutral         -0.2766   -0.579053
+       39     Q      L     Q39L  -0.397003     Neutral          0.1287   -0.525703
+       41     V      L     V41L  -1.346460 Stabilizing         -0.2161   -1.130360
+       42     M      L     M42L   0.523105     Neutral          0.0662    0.456905
+       43     E      R     E43R  -0.183466     Neutral          0.1359   -0.319366

@@ -1,0 +1,122 @@
+================================================================================
+CONSOLIDATING PROTDDG-BENCH ORIGINAL DATA
+================================================================================
+
+Reading: broom.csv
+   Original columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG', 'pH', 'T', 'COMMENTS']
+   Original records: 605
+   Extracted 605 records
+
+Reading: korpm.csv
+   Original columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG', 'pH', 'T']
+   Original records: 2371
+   Extracted 2371 records
+
+Reading: myoglobin.csv
+   Original columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG']
+   Original records: 134
+   Extracted 134 records
+
+Reading: ptmul.csv
+   Original columns: ['CLUID', 'PDB', 'CHAIN', 'MUTS', 'DDG', 'NMUT']
+   Original records: 914
+   Extracted 914 records
+
+Reading: s2648.csv
+   Original columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG', 'pH', 'T']
+   Original records: 2648
+   Extracted 2648 records
+
+Reading: ssym.csv
+   Original columns: ['ID', 'CLUID', 'PDB', 'CHAIN', 'MUT', 'DDG', 'pH', 'T', 'DIR/INV']
+   Original records: 684
+   Extracted 684 records
+
+Reading: vb1432.csv
+   Original columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG', 'pH', 'T']
+   Original records: 1432
+   Extracted 1432 records
+
+================================================================================
+COMBINING AND SORTING DATA
+================================================================================
+
+Total records before grouping: 8788
+Total records after sorting: 8788
+
+================================================================================
+SUMMARY BY SOURCE FILE
+================================================================================
+s2648          :  2648 records
+korpm          :  2371 records
+vb1432         :  1432 records
+ptmul          :   914 records
+ssym           :   684 records
+broom          :   605 records
+myoglobin      :   134 records
+
+================================================================================
+SUMMARY BY PDB
+================================================================================
+
+Top 20 PDBs by number of mutations:
+  1PGA: 876 mutations
+  1STN: 570 mutations
+  2LZM: 522 mutations
+  1EY0: 510 mutations
+  1BNI: 437 mutations
+  1VQB: 219 mutations
+  2CI2: 215 mutations
+  1LZ1: 185 mutations
+  2RN2: 179 mutations
+  4LYZ: 173 mutations
+  1L63: 150 mutations
+  1BZ6: 134 mutations
+  1CSP: 134 mutations
+  1BVC: 131 mutations
+  1RTB: 119 mutations
+  1AJ3: 107 mutations
+  5DFR: 102 mutations
+  1RN1: 102 mutations
+  1FTG: 96 mutations
+  1QLP: 95 mutations
+
+================================================================================
+SAVING RESULTS
+================================================================================
+Saved to: consolidated_protddg_data_with_source.csv
+  Columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG', 'SOURCE_FILE']
+
+Saved to: consolidated_protddg_data.csv
+  Columns: ['CLID', 'PDB', 'CHAIN', 'MUT', 'DDG']
+  Total records: 8788
+
+================================================================================
+CONSOLIDATION COMPLETE!
+================================================================================
+
+First 10 rows of consolidated data:
+ CLID  PDB CHAIN   MUT   DDG
+2LZMA 107L     A  G44S  0.50
+2LZMA 108L     A  I44S -0.30
+2LZMA 109L     A  K44S -0.20
+2LZMA 110L     A  L44S -0.40
+2LZMA 111L     A  N44S  0.10
+2LZMA 112L     A  P44S  3.00
+2LZMA 113L     A  R44S -0.20
+2LZMA 114L     A  T44S -0.01
+2LZMA 115L     A  V44S -0.10
+2LZMA 118L     A S130A  1.00
+
+Last 10 rows of consolidated data:
+ CLID  PDB CHAIN   MUT   DDG
+1BPIA 5PTI     A  Y35G -5.00
+1BPIA 5PTI     A  Y35N -3.70
+  128 5T43     A C153S -2.60
+   29 5TR5     A  G12R -0.31
+   29 5TR5     A  P37L -0.29
+   29 5TR5     A  R33Q -0.65
+   29 5TR5     A  T55I  0.24
+    8 5VP3     A  R39K  0.41
+    8 5VP3     A V183T  0.35
+1BPIA 8PTI     A  G35Y  5.00

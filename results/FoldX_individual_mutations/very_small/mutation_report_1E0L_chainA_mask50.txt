@@ -1,0 +1,27 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 1E0L.pdb
+Chain: A
+
+Wildtype:  GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK
+Optimized: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEFQ
+
+Total mutations: 11
+ESM3-FoldX combined ΔΔG: -5.976 kcal/mol
+Sum of individual ΔΔG: -4.209 kcal/mol
+Epistasis: 1.768 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG      Effect  ThermoMPNN_ddG  Difference
+        1     G      M      G1M  -0.095733     Neutral          0.1011   -0.196833
+        2     A      G      A2G  -0.886430     Neutral          0.1579   -1.044330
+        5     V      R      V5R  -0.751363     Neutral          0.1107   -0.862063
+        6     S      A      S6A   0.256865     Neutral          0.0615    0.195365
+        9     T      R      T9R  -0.118175     Neutral          0.4559   -0.574075
+       14     A      P     A14P  -0.365380     Neutral          0.0893   -0.454680
+       20     Y      F     Y20F   0.485017     Neutral          0.4371    0.047917
+       26     L      G     L26G  -2.425860 Stabilizing         -0.5496   -1.876260
+       29     T      R     T29R   0.523819     Neutral          0.5968   -0.072981
+       36     L      F     L36F  -0.287449     Neutral          0.2244   -0.511849
+       37     K      Q     K37Q  -0.543938     Neutral         -0.1637   -0.380238

@@ -1,8 +1,26 @@
-# Ignore the FoldX binary (the * makes it match any version)
-foldx/foldx*
+# Ignore the FoldX binary anywhere in the repo (the * makes it match any version)
+**/foldx_*[0-9]*
 
-# Ignore the rotabase file
-foldx/rotabase.txt
+# Ignore rotabase.txt anywhere
+**/rotabase.txt
 
-__pycache__
-*.egg-info
+# Ignore FoldX cache directories anywhere
+**/foldx_cache/
+
+# Ignore FoldX temporary run directories (e.g., foldx_run_15e8face)
+**/foldx_run_*/
+
+# Ignore embedded git repositories
+protddg-bench/
+
+# Python cache and build artifacts
+__pycache__/
+*.egg-info/
+*.pyc
+*.pyo
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files (optional - remove if you want to track logs)
+# logs/

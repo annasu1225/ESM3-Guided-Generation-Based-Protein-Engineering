@@ -1,0 +1,2337 @@
+=================================================================
+ESM3-FoldX Guided Generation Log
+Run Timestamp: 20251205_004833
+=================================================================
+
+--- RUN PARAMETERS ---
+PDB File: 1E0L.pdb
+Masking Percentage: 50.0%
+Decoding Steps: 16
+Samples per Step: 20
+
+--- SEQUENCE SETUP ---
+Wild-Type Sequence Length: 37
+Original Wild-Type Sequence:
+GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK
+
+Masked Template for Generation (18 masks):
+__TA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+=================================================================
+
+--- Step 1 Partial Sequences ---
+[Candidate 1] Partial Sequence: __TA__E___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 2] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E__WEKPQE__
+[Candidate 3] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E__WEKPQE__
+[Candidate 4] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 5] Partial Sequence: __TAN_E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 6] Partial Sequence: _KTA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 7] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E_RWEK_QE__
+[Candidate 8] Partial Sequence: T_TA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 9] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 10] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E__WEK_QE_X
+[Candidate 11] Partial Sequence: __TA__E__EY_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 12] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E_VWEK_QE__
+[Candidate 13] Partial Sequence: __TA_DE___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 14] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E__WEK_QEQ_
+[Candidate 15] Partial Sequence: __TA__EW__Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 16] Partial Sequence: __TAT_E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 17] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E__WEK_QEQ_
+[Candidate 18] Partial Sequence: __TA__E___Y_T_D_KTY__NNRT_E__WEKPQE__
+[Candidate 19] Partial Sequence: __TAT_E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 20] Partial Sequence: __TA__E___Y_TDD_KTY__NNRT_E__WEK_QE__
+
+--- FOLDX Log for sequence MSTAPSEWTEYTTPD... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1E0L_Repair.pdb
+Output: ./1E0L_Repair.log
+
+BackHbond       =               -16.22
+SideHbond       =               -9.53
+Energy_VdW      =               -33.04
+Electro         =               -0.33
+Energy_SolvP    =               45.75
+Energy_SolvH    =               -42.44
+Energy_vdwclash =               8.86
+energy_torsion  =               4.16
+backbone_vdwclash=              22.32
+Entropy_sidec   =               19.55
+Entropy_mainc   =               58.37
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  35.12
+
+Starting BuildModel
+Reading GA1M,AA2S,VA5P,KA12T,AA14P,LA26G,KA37E;
+Residue to Mutate GLYA1 has residue index 0
+Residue to Mutate ALAA2 has residue index 1
+Residue to Mutate VALA5 has residue index 4
+Residue to Mutate LYSA12 has residue index 11
+Residue to Mutate ALAA14 has residue index 13
+Residue to Mutate LEUA26 has residue index 25
+Residue to Mutate LYSA37 has residue index 36
+Mutating residue = GLYA1 into MET
+Mutating residue = VALA5 into PRO
+Mutating residue = ALAA14 into PRO
+Mutating residue = LEUA26 into GLY
+Mutating residue = ALAA2 into SER
+Mutating residue = LYSA12 into THR
+Mutating residue = LYSA37 into GLU
+Your file run OK
+End time of FoldX: Fri Dec  5 00:49:58 2025
+Total time spend: 13.97 seconds.
+validated file "1E0L_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MSTAPSEWTEYTTPD... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1E0L_Repair.pdb
+Output: ./1E0L_Repair.log
+
+BackHbond       =               -16.22
+SideHbond       =               -9.53
+Energy_VdW      =               -33.04
+Electro         =               -0.33
+Energy_SolvP    =               45.75
+Energy_SolvH    =               -42.44
+Energy_vdwclash =               8.86
+energy_torsion  =               4.16
+backbone_vdwclash=              22.32
+Entropy_sidec   =               19.55
+Entropy_mainc   =               58.37
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.00
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  35.12
+
+Starting BuildModel
+Reading GA1M,AA2S,VA5P,KA12T,AA14P,LA26G,KA37E;
+Residue to Mutate GLYA1 has residue index 0
+Residue to Mutate ALAA2 has residue index 1
+Residue to Mutate VALA5 has residue index 4
+Residue to Mutate LYSA12 has residue index 11
+Residue to Mutate ALAA14 has residue index 13
+Residue to Mutate LEUA26 has residue index 25
+Residue to Mutate LYSA37 has residue index 36
+Mutating residue = GLYA1 into MET
+Mutating residue = VALA5 into PRO
+Mutating residue = ALAA14 into PRO
+Mutating residue = LEUA26 into GLY
+Mutating residue = ALAA2 into SER
+Mutating residue = LYSA12 into THR
+Mutating residue = LYSA37 into GLU
+Your file run OK
+End time of FoldX: Fri Dec  5 00:50:00 2025
+Total time spend: 13.88 seconds.
+validated file "1E0L_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MATAASEWEEYTTPDGKTYYYNNRTGESTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.3307 | ddG: -1.331 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MSTANSEWTEYTTPDGKTYYYNNRTGETTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MKTAPSEWTEYKTPDGKTYYYNNRTGETTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESRWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: TTTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQEAX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.3307 | ddG: -1.331 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQEKX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MATAPSEWTEYKTPDGKTYYYNNRTGESTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGETVWEKPQEAX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MATASDEWTEYTTPDGKTYYYNNRTGESTWEKPQEKX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQEQX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MSTAASEWTEYTTPDGKTYYYNNRTGESTWEKPQEEX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MATATGEWTEYTTPDGKTYYYNNRTGETTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQEQX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MATAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MATATGEWTEYTTPDGKTYYYNNRTGETTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MATAPSEWTEYTTDDGKTYYYNNRTGESTWEKPQELX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+Best Score in Step (=-ΔΔG): 1.3307
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 49.96 s
+  - Scoring (CPU/FoldX):        27.85 s
+  - Total Step Time:              77.81 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: M_TA__E___Y_T_D_KTYY_NNRT_E__WEK_QE__
+[Candidate 2] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E_KWEK_QE__
+[Candidate 3] Partial Sequence: M_TA__E___Y_T_D_KTY_VNNRT_E__WEK_QE__
+[Candidate 4] Partial Sequence: M_TA__E___Y_TPD_KTY__NNRT_E__WEK_QE__
+[Candidate 5] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QEL_
+[Candidate 6] Partial Sequence: M_TA__E___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 7] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 8] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QEC_
+[Candidate 9] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QE_Q
+[Candidate 10] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QEL_
+[Candidate 11] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEK_QE_E
+[Candidate 12] Partial Sequence: MQTA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 13] Partial Sequence: M_TA__E___YQT_D_KTY__NNRT_E__WEK_QE__
+[Candidate 14] Partial Sequence: META__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 15] Partial Sequence: M_TA__E___Y_T_D_KTY__NNRT_E__WEKPQE__
+[Candidate 16] Partial Sequence: MTTA__E___Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 17] Partial Sequence: M_TA__E___Y_TVD_KTY__NNRT_E__WEK_QE__
+[Candidate 18] Partial Sequence: M_TA__E___YKT_D_KTY__NNRT_E__WEK_QE__
+[Candidate 19] Partial Sequence: M_TA__E___Y_T_DGKTY__NNRT_E__WEK_QE__
+[Candidate 20] Partial Sequence: M_TA__E___YET_D_KTY__NNRT_E__WEK_QE__
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.3307 | ddG: -1.331 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MSTAPSEWTEYKTPDGKTYYYNNRTGESKWEKPQELE
+  pTM: N/A
+  Score: 1.4577 | ddG: -1.458 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYVNNRTGETTWEKPQELE
+  pTM: N/A
+  Score: 1.8820 | ddG: -1.882 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 1.0669 | ddG: -1.067 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELL
+  pTM: N/A
+  Score: 1.3481 | ddG: -1.348 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.3307 | ddG: -1.331 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.4818 | ddG: -2.482 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTKESTWEKPQECL
+  pTM: N/A
+  Score: -0.5719 | ddG: 0.572 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 1.6823 | ddG: -1.682 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELL
+  pTM: N/A
+  Score: 1.3481 | ddG: -1.348 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQEEE
+  pTM: N/A
+  Score: -0.6995 | ddG: 0.700 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MQTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 0.0955 | ddG: -0.095 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MSTAPSEWTEYQTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.4032 | ddG: -1.403 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: METAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: -0.2368 | ddG: 0.237 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 1.0669 | ddG: -1.067 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MTTAPSEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 1.0880 | ddG: -1.088 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MSTAEPEWWEYKTVDGKTYYYNNRTGETTWEKPQELE
+  pTM: N/A
+  Score: -1.1308 | ddG: 1.131 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MSTAPSEWTEYKTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.9405 | ddG: -1.940 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MSTAPSEWTEYTTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 0.6996 | ddG: -0.700 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MSTAPSEWTEYETPDGKTYYYNNRTGETTWEKPQELE
+  pTM: N/A
+  Score: 1.4823 | ddG: -1.482 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+Best Score in Step (=-ΔΔG): 2.4818
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 21.33 s
+  - Scoring (CPU/FoldX):        40.35 s
+  - Total Step Time:              61.69 s
+
+--- Step 3 Partial Sequences ---
+[Candidate 1] Partial Sequence: M_TA_AEW__Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 2] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEK_QE_P
+[Candidate 3] Partial Sequence: M_TA_AEW__Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 4] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 5] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEK_QEK_
+[Candidate 6] Partial Sequence: M_TA_AE___YVT_D_KTY__NNRT_E__WEK_QE__
+[Candidate 7] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEKPQE__
+[Candidate 8] Partial Sequence: M_TA_AE_T_Y_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 9] Partial Sequence: M_TA_AE___Y_TSD_KTY__NNRT_E__WEK_QE__
+[Candidate 10] Partial Sequence: M_TA_AE___YET_D_KTY__NNRT_E__WEK_QE__
+[Candidate 11] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEKPQE__
+[Candidate 12] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRTGE__WEK_QE__
+[Candidate 13] Partial Sequence: M_TA_AE___Y_T_D_KTY_VNNRT_E__WEK_QE__
+[Candidate 14] Partial Sequence: M_TA_AE__TY_T_D_KTY__NNRT_E__WEK_QE__
+[Candidate 15] Partial Sequence: M_TA_AE___Y_T_D_KTY_HNNRT_E__WEK_QE__
+[Candidate 16] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEK_QEL_
+[Candidate 17] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_ET_WEK_QE__
+[Candidate 18] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_ES_WEK_QE__
+[Candidate 19] Partial Sequence: M_TA_AE___Y_T_DGKTY__NNRT_E__WEK_QE__
+[Candidate 20] Partial Sequence: M_TA_AE___Y_T_D_KTY__NNRT_E__WEKPQE__
+
+--- Step 3 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 2.4949 | ddG: -2.495 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQEAP
+  pTM: N/A
+  Score: 1.1270 | ddG: -1.127 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 2.4949 | ddG: -2.495 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.8570 | ddG: -2.857 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MATAMAEWTEYKTPDGKTYYYNNRTGESTWEKPQEKK
+  pTM: N/A
+  Score: 2.0256 | ddG: -2.026 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MATAAAEWTEYVTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 2.0794 | ddG: -2.079 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.7684 | ddG: -2.768 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 2.2084 | ddG: -2.208 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MSTAAAEWTEYTTSDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 1.8845 | ddG: -1.885 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MATAAAEWTEYETPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.8317 | ddG: -2.832 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.7684 | ddG: -2.768 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGETTWEKPQEAA
+  pTM: N/A
+  Score: 1.5616 | ddG: -1.562 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYVNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 2.7579 | ddG: -2.758 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MATAAAEWTTYTTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 1.9554 | ddG: -1.955 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYHNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 1.5066 | ddG: -1.507 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MSTAPAEWTEYTTPDGKTYYYNNRTGESTWEKPQELL
+  pTM: N/A
+  Score: 0.9787 | ddG: -0.979 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGETTWEKPQELA
+  pTM: N/A
+  Score: 2.2084 | ddG: -2.208 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.4818 | ddG: -2.482 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGETTWEKPQEAA
+  pTM: N/A
+  Score: 1.6014 | ddG: -1.601 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.7684 | ddG: -2.768 kcal/mol
+
+------------------------- Step 3 Summary -------------------------
+Best Candidate in Step:
+MATAAAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+Best Score in Step (=-ΔΔG): 2.8570
+This sequence will be used as the template for Step 4.
+-----------------------------------------------------------------
+Timing for Step 3:
+  - Candidate Generation (GPU): 21.40 s
+  - Scoring (CPU/FoldX):        30.11 s
+  - Total Step Time:              51.52 s
+
+--- Step 4 Partial Sequences ---
+[Candidate 1] Partial Sequence: M_TA_AE_Q_Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 2] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E__WEK_QEE_
+[Candidate 3] Partial Sequence: M_TA_AE__RY_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 4] Partial Sequence: M_TA_AE___Y_TPD_KTY_YNNRT_E__WEK_QE__
+[Candidate 5] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_ES_WEK_QE__
+[Candidate 6] Partial Sequence: M_TA_AE__QY_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 7] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E__WEK_QE_R
+[Candidate 8] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E_RWEK_QE__
+[Candidate 9] Partial Sequence: M_TA_AE_Q_Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 10] Partial Sequence: M_TA_AE__AY_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 11] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E__WEK_QEM_
+[Candidate 12] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_ES_WEK_QE__
+[Candidate 13] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E__WEK_QEC_
+[Candidate 14] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 15] Partial Sequence: M_TASAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 16] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRTRE__WEK_QE__
+[Candidate 17] Partial Sequence: MATA_AE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 18] Partial Sequence: M_TA_AE___Y_T_D_KTY_YNNRT_E_TWEK_QE__
+[Candidate 19] Partial Sequence: M_TA_AE___YVT_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 20] Partial Sequence: M_TA_AEW__Y_T_D_KTY_YNNRT_E__WEK_QE__
+
+--- Step 4 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MATAAAEWQEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.0596 | ddG: -2.060 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MSTAMAEWTEYKTPDGKTYYYNNRTGESTWEKPQEEE
+  pTM: N/A
+  Score: 1.0412 | ddG: -1.041 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MATAAAEWTRYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.4237 | ddG: -2.424 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.4818 | ddG: -2.482 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.4818 | ddG: -2.482 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MATAAAEWQQYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.1212 | ddG: -2.121 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGESTWEKPQELR
+  pTM: N/A
+  Score: 2.8204 | ddG: -2.820 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGESRWEKPQELA
+  pTM: N/A
+  Score: 2.2767 | ddG: -2.277 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MATAAAEWQEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.0596 | ddG: -2.060 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MATAAAEWTAYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.1315 | ddG: -2.131 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGESTWEKPQEML
+  pTM: N/A
+  Score: 3.0822 | ddG: -3.082 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.4818 | ddG: -2.482 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MATAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQECL
+  pTM: N/A
+  Score: 2.4855 | ddG: -2.485 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 3.1754 | ddG: -3.175 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MATASAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.1855 | ddG: -2.185 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTRESTWEKPQELA
+  pTM: N/A
+  Score: 0.7159 | ddG: -0.716 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.8570 | ddG: -2.857 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MATAAAEWTEYKTPDGKTYYYNNRTGESTWEKPQEAA
+  pTM: N/A
+  Score: 1.8039 | ddG: -1.804 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MATAAAEWTEYVTPDGKTYYYNNRTGESTWEKPQEAA
+  pTM: N/A
+  Score: 1.4329 | ddG: -1.433 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MSTAAAEWTEYTTPDGKTYYYNNRTGESTWEKPQEEA
+  pTM: N/A
+  Score: 0.7108 | ddG: -0.711 kcal/mol
+
+------------------------- Step 4 Summary -------------------------
+Best Candidate in Step:
+MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+Best Score in Step (=-ΔΔG): 3.1754
+This sequence will be used as the template for Step 5.
+-----------------------------------------------------------------
+Timing for Step 4:
+  - Candidate Generation (GPU): 20.86 s
+  - Scoring (CPU/FoldX):        35.20 s
+  - Total Step Time:              56.07 s
+
+--- Step 5 Partial Sequences ---
+[Candidate 1] Partial Sequence: MNTARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 2] Partial Sequence: M_TARAE___Y_T_DGKTY_YNNRT_E__WEK_QE__
+[Candidate 3] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 4] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 5] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEKPQE__
+[Candidate 6] Partial Sequence: M_TARAE___Y_TED_KTY_YNNRT_E__WEK_QE__
+[Candidate 7] Partial Sequence: M_TARAEW__Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 8] Partial Sequence: MSTARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 9] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRTEE__WEK_QE__
+[Candidate 10] Partial Sequence: MNTARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 11] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEKPQE__
+[Candidate 12] Partial Sequence: METARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 13] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEK_QE_S
+[Candidate 14] Partial Sequence: MSTARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 15] Partial Sequence: METARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 16] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 17] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E_RWEK_QE__
+[Candidate 18] Partial Sequence: M_TARAEW__Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 19] Partial Sequence: M_TARAE_S_Y_T_D_KTY_YNNRT_E__WEK_QE__
+[Candidate 20] Partial Sequence: MSTARAE___Y_T_D_KTY_YNNRT_E__WEK_QE__
+
+--- Step 5 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MNTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 3.3743 | ddG: -3.374 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQEEA
+  pTM: N/A
+  Score: 1.1407 | ddG: -1.141 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 3.4614 | ddG: -3.461 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MSTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.8792 | ddG: -2.879 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MATARAEWEEYKTEDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 2.6051 | ddG: -2.605 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MSTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 3.1023 | ddG: -3.102 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 3.3950 | ddG: -3.395 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MATARAEWEEYTTEDGKTYYYNNRTEESTWEKPQELE
+  pTM: N/A
+  Score: 0.9447 | ddG: -0.945 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MNTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 3.3743 | ddG: -3.374 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MSTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 2.8792 | ddG: -2.879 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: METARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.4686 | ddG: -1.469 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELS
+  pTM: N/A
+  Score: 3.7097 | ddG: -3.710 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 3.3950 | ddG: -3.395 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: METARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 1.4686 | ddG: -1.469 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 3.4614 | ddG: -3.461 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELE
+  pTM: N/A
+  Score: 3.6613 | ddG: -3.661 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MSTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 3.1023 | ddG: -3.102 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MATARAEWSEYTTPDGKTYYYNNRTGESTWEKPQELE
+  pTM: N/A
+  Score: 2.3975 | ddG: -2.398 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELA
+  pTM: N/A
+  Score: 3.3950 | ddG: -3.395 kcal/mol
+
+------------------------- Step 5 Summary -------------------------
+Best Candidate in Step:
+MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+Best Score in Step (=-ΔΔG): 3.8251
+This sequence will be used as the template for Step 6.
+-----------------------------------------------------------------
+Timing for Step 5:
+  - Candidate Generation (GPU): 18.95 s
+  - Scoring (CPU/FoldX):        36.54 s
+  - Total Step Time:              55.50 s
+
+--- Step 6 Partial Sequences ---
+[Candidate 1] Partial Sequence: M_TARAE_N_Y_T_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 2] Partial Sequence: M_TARAE___YET_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 3] Partial Sequence: M_TARAEW__Y_T_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 4] Partial Sequence: M_TARAE__EY_T_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 5] Partial Sequence: M_TARAE___Y_T_D_KTYYYNNRT_E__WEK_QE_Q
+[Candidate 6] Partial Sequence: M_TARAE__EY_T_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 7] Partial Sequence: M_TARAE___Y_T_DNKTY_YNNRT_E__WEK_QE_Q
+[Candidate 8] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 9] Partial Sequence: M_TARAE__AY_T_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 10] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E_TWEK_QE_Q
+[Candidate 11] Partial Sequence: M_TARAE___Y_TPD_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 12] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 13] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 14] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRTKE__WEK_QE_Q
+[Candidate 15] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_ES_WEK_QE_Q
+[Candidate 16] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_ES_WEK_QE_Q
+[Candidate 17] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 18] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRT_E__WEK_QEEQ
+[Candidate 19] Partial Sequence: M_TARAE___YTT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 20] Partial Sequence: M_TARAE___Y_T_D_KTY_YNNRTKE__WEK_QE_Q
+
+--- Step 6 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MATARAEWNEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.7980 | ddG: -2.798 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MATARAEWEEYETPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3389 | ddG: -3.339 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MSTARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.4628 | ddG: -3.463 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MATARAEWQEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3682 | ddG: -3.368 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MATARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3406 | ddG: -3.341 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MATARAEWQEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3682 | ddG: -3.368 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MATARAEWEEYKTPDNKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: -0.2192 | ddG: 0.219 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MATARAEWTAYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.9116 | ddG: -2.912 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MATARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3406 | ddG: -3.341 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MATARAEWSEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.7356 | ddG: -2.736 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MATARAEWEEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.9664 | ddG: -2.966 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTKESTWEKPQELQ
+  pTM: N/A
+  Score: 2.1824 | ddG: -2.182 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MATARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3406 | ddG: -3.341 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MATARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3406 | ddG: -3.341 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MATARAEWSEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.7356 | ddG: -2.736 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MATARAEWTEYTTPDGKTYYYNNRTGESTWEKPQEEQ
+  pTM: N/A
+  Score: 1.2106 | ddG: -1.211 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MATARAEWTEYTTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.3406 | ddG: -3.341 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTKESTWEKPQELQ
+  pTM: N/A
+  Score: 2.1824 | ddG: -2.182 kcal/mol
+
+------------------------- Step 6 Summary -------------------------
+Best Candidate in Step:
+MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+Best Score in Step (=-ΔΔG): 3.8251
+This sequence will be used as the template for Step 7.
+-----------------------------------------------------------------
+Timing for Step 6:
+  - Candidate Generation (GPU): 19.30 s
+  - Scoring (CPU/FoldX):        38.35 s
+  - Total Step Time:              57.65 s
+
+--- Step 7 Partial Sequences ---
+[Candidate 1] Partial Sequence: M_TARAE__EYKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 2] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 3] Partial Sequence: M_TARAE___YKT_D_KTYYYNNRT_E__WEK_QE_Q
+[Candidate 4] Partial Sequence: M_TARAE___YKT_D_KTYFYNNRT_E__WEK_QE_Q
+[Candidate 5] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 6] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 7] Partial Sequence: METARAE___YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 8] Partial Sequence: MATARAE___YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 9] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_ES_WEK_QE_Q
+[Candidate 10] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_E_TWEK_QE_Q
+[Candidate 11] Partial Sequence: M_TARAE___YKTQD_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 12] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_E__WEK_QEYQ
+[Candidate 13] Partial Sequence: M_TARAE___YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 14] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 15] Partial Sequence: M_TARAEW__YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 16] Partial Sequence: MITARAE___YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 17] Partial Sequence: M_TARAE___YKT_D_KTYYYNNRT_E__WEK_QE_Q
+[Candidate 18] Partial Sequence: M_TARAE___YKTPD_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 19] Partial Sequence: M_TARAE___YKT_D_KTY_YNNRT_ES_WEK_QE_Q
+[Candidate 20] Partial Sequence: M_TARAE_S_YKT_D_KTY_YNNRT_E__WEK_QE_Q
+
+--- Step 7 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.0794 | ddG: -4.079 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYFYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.4396 | ddG: -3.440 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: METARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.4735 | ddG: -2.474 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MATARAEWTEYKTQDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8858 | ddG: -3.886 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQEYQ
+  pTM: N/A
+  Score: 3.5953 | ddG: -3.595 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.0794 | ddG: -4.079 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MITARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.4467 | ddG: -2.447 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MSTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.0794 | ddG: -4.079 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MATARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.8251 | ddG: -3.825 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MATARAEWSEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 3.1716 | ddG: -3.172 kcal/mol
+
+------------------------- Step 7 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.2286
+This sequence will be used as the template for Step 8.
+-----------------------------------------------------------------
+Timing for Step 7:
+  - Candidate Generation (GPU): 18.51 s
+  - Scoring (CPU/FoldX):        31.19 s
+  - Total Step Time:              49.70 s
+
+--- Step 8 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 2] Partial Sequence: MGTARAEV__YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 3] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 4] Partial Sequence: MGTARAE___YKT_D_KTYWYNNRT_E__WEK_QE_Q
+[Candidate 5] Partial Sequence: MGTARAE___YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 6] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 7] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E_SWEK_QE_Q
+[Candidate 8] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAE___YKT_D_KTYYYNNRT_E__WEK_QE_Q
+[Candidate 10] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_ET_WEK_QE_Q
+[Candidate 11] Partial Sequence: MGTARAE___YKTED_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 12] Partial Sequence: MGTARAE__EYKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 13] Partial Sequence: MGTARAE___YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 14] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E_SWEK_QE_Q
+[Candidate 15] Partial Sequence: MGTARAE___YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 16] Partial Sequence: MGTARAE___YKT_D_KTYYYNNRT_E__WEK_QE_Q
+[Candidate 17] Partial Sequence: MGTARAE_A_YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 18] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E__WEK_QEDQ
+[Candidate 19] Partial Sequence: MGTARAE__EYKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 20] Partial Sequence: MGTARAE___YKT_D_KTY_YNNRT_E_KWEK_QE_Q
+
+--- Step 8 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEVKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.6986 | ddG: -4.699 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYWYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.0725 | ddG: -2.073 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQEAQ
+  pTM: N/A
+  Score: 3.7277 | ddG: -3.728 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESSWEKPQEAQ
+  pTM: N/A
+  Score: 3.9283 | ddG: -3.928 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGETTWEKPQELQ
+  pTM: N/A
+  Score: 4.8807 | ddG: -4.881 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWTEYKTEDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.2742 | ddG: -4.274 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESSWEKPQEAQ
+  pTM: N/A
+  Score: 3.9283 | ddG: -3.928 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWAEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.3210 | ddG: -4.321 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQEDQ
+  pTM: N/A
+  Score: 3.0519 | ddG: -3.052 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESKWEKPQELQ
+  pTM: N/A
+  Score: 4.7592 | ddG: -4.759 kcal/mol
+
+------------------------- Step 8 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.2286
+This sequence will be used as the template for Step 9.
+-----------------------------------------------------------------
+Timing for Step 8:
+  - Candidate Generation (GPU): 18.87 s
+  - Scoring (CPU/FoldX):        51.72 s
+  - Total Step Time:              70.60 s
+
+--- Step 9 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEW__YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 3] Partial Sequence: MGTARAEW__YKT_DDKTY_YNNRT_E__WEK_QE_Q
+[Candidate 4] Partial Sequence: MGTARAEWV_YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 5] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEK_QEGQ
+[Candidate 6] Partial Sequence: MGTARAEWI_YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 7] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 8] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEK_QENQ
+[Candidate 11] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 12] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRTGE__WEK_QE_Q
+[Candidate 13] Partial Sequence: MGTARAEW__YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 14] Partial Sequence: MGTARAEW__YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 15] Partial Sequence: MGTARAEW__YKT_DGKTY_YNNRT_E__WEK_QE_Q
+[Candidate 16] Partial Sequence: MGTARAEWK_YKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 17] Partial Sequence: MGTARAEW__YKTPD_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 18] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 19] Partial Sequence: MGTARAEW__YKTPD_KTY_YNNRT_E__WEK_QE_Q
+[Candidate 20] Partial Sequence: MGTARAEW__YKTAD_KTY_YNNRT_E__WEK_QE_Q
+
+--- Step 9 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWKEYKTPDDKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 1.6335 | ddG: -1.633 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWVEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.6407 | ddG: -4.641 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQEGQ
+  pTM: N/A
+  Score: 2.4317 | ddG: -2.432 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWIEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.0620 | ddG: -5.062 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.7603 | ddG: -4.760 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQENQ
+  pTM: N/A
+  Score: 3.6186 | ddG: -3.619 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.7603 | ddG: -4.760 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.7603 | ddG: -4.760 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.7603 | ddG: -4.760 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWKEYKTADGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.6333 | ddG: -4.633 kcal/mol
+
+------------------------- Step 9 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.2286
+This sequence will be used as the template for Step 10.
+-----------------------------------------------------------------
+Timing for Step 9:
+  - Candidate Generation (GPU): 20.00 s
+  - Scoring (CPU/FoldX):        45.83 s
+  - Total Step Time:              65.83 s
+
+--- Step 10 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEW__YKTTD_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 3] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 4] Partial Sequence: MGTARAEW__YKT_D_KTYFYNNRT_E__WEKPQE_Q
+[Candidate 5] Partial Sequence: MGTARAEW__YKT_D_KTYYYNNRT_E__WEKPQE_Q
+[Candidate 6] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 7] Partial Sequence: MGTARAEWQ_YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 8] Partial Sequence: MGTARAEW__YKT_D_KTYYYNNRT_E__WEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E_LWEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 11] Partial Sequence: MGTARAEW__YKT_D_KTYWYNNRT_E__WEKPQE_Q
+[Candidate 12] Partial Sequence: MGTARAEW__YKT_DGKTY_YNNRT_E__WEKPQE_Q
+[Candidate 13] Partial Sequence: MGTARAEWS_YKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 14] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_ES_WEKPQE_Q
+[Candidate 15] Partial Sequence: MGTARAEW__YKT_D_KTYYYNNRT_E__WEKPQE_Q
+[Candidate 16] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E_SWEKPQE_Q
+[Candidate 17] Partial Sequence: MGTARAEW__YKT_DGKTY_YNNRT_E__WEKPQE_Q
+[Candidate 18] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 19] Partial Sequence: MGTARAEW__YKTGD_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 20] Partial Sequence: MGTARAEW__YKT_D_KTY_YNNRT_E__WEKPQEEQ
+
+--- Step 10 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWKEYKTTDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.3538 | ddG: -4.354 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYFYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.1071 | ddG: -5.107 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.6047 | ddG: -4.605 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESLWEKPQELQ
+  pTM: N/A
+  Score: 4.5653 | ddG: -4.565 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYWYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 1.8937 | ddG: -1.894 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWSEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.1158 | ddG: -4.116 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESSWEKPQELQ
+  pTM: N/A
+  Score: 4.9661 | ddG: -4.966 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWKEYKTGDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.4353 | ddG: -4.435 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQEEQ
+  pTM: N/A
+  Score: 3.2509 | ddG: -3.251 kcal/mol
+
+------------------------- Step 10 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.2286
+This sequence will be used as the template for Step 11.
+-----------------------------------------------------------------
+Timing for Step 10:
+  - Candidate Generation (GPU): 18.69 s
+  - Scoring (CPU/FoldX):        48.38 s
+  - Total Step Time:              67.07 s
+
+--- Step 11 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E_RWEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEW_EYKT_D_KTYYYNNRT_E__WEKPQE_Q
+[Candidate 3] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E_TWEKPQE_Q
+[Candidate 4] Partial Sequence: MGTARAEWSEYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 5] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_ES_WEKPQE_Q
+[Candidate 6] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTGE__WEKPQE_Q
+[Candidate 7] Partial Sequence: MGTARAEWKEYKT_D_KTY_YNNRT_E__WEKPQE_Q
+[Candidate 8] Partial Sequence: MGTARAEW_EYKT_D_KTYYYNNRT_E__WEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEW_EYKT_D_KTYWYNNRT_E__WEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEW_EYKT_D_KTYYYNNRT_E__WEKPQE_Q
+[Candidate 11] Partial Sequence: MGTARAEW_EYKT_DDKTY_YNNRT_E__WEKPQE_Q
+[Candidate 12] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E__WEKPQE_Q
+[Candidate 13] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_ET_WEKPQE_Q
+[Candidate 14] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTQE__WEKPQE_Q
+[Candidate 15] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTKE__WEKPQE_Q
+[Candidate 16] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTRE__WEKPQE_Q
+[Candidate 17] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E__WEKPQE_Q
+[Candidate 18] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E_TWEKPQE_Q
+[Candidate 19] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_ES_WEKPQE_Q
+[Candidate 20] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTKE__WEKPQE_Q
+
+--- Step 11 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWSEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 4.1158 | ddG: -4.116 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYWYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 2.0725 | ddG: -2.073 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWKEYKTPDDKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 1.6335 | ddG: -1.633 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGETTWEKPQELQ
+  pTM: N/A
+  Score: 4.8807 | ddG: -4.881 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYYYNNRTQESTWEKPQELQ
+  pTM: N/A
+  Score: 3.0632 | ddG: -3.063 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTKESTWEKPQELQ
+  pTM: N/A
+  Score: 3.2121 | ddG: -3.212 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTRESTWEKPQELQ
+  pTM: N/A
+  Score: 3.0889 | ddG: -3.089 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESTWEKPQELQ
+  pTM: N/A
+  Score: 5.2286 | ddG: -5.229 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTKESTWEKPQELQ
+  pTM: N/A
+  Score: 3.2121 | ddG: -3.212 kcal/mol
+
+------------------------- Step 11 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.5616
+This sequence will be used as the template for Step 12.
+-----------------------------------------------------------------
+Timing for Step 11:
+  - Candidate Generation (GPU): 19.00 s
+  - Scoring (CPU/FoldX):        38.25 s
+  - Total Step Time:              57.26 s
+
+--- Step 12 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEWGEYKT_D_KTY_YNNRT_E_RWEKPQE_Q
+[Candidate 3] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTKE_RWEKPQE_Q
+[Candidate 4] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTQE_RWEKPQE_Q
+[Candidate 5] Partial Sequence: MGTARAEW_EYKT_D_KTYYYNNRT_E_RWEKPQE_Q
+[Candidate 6] Partial Sequence: MGTARAEW_EYKTPD_KTY_YNNRT_E_RWEKPQE_Q
+[Candidate 7] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 8] Partial Sequence: MGTARAEW_EYKTTD_KTY_YNNRT_E_RWEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTSE_RWEKPQE_Q
+[Candidate 11] Partial Sequence: MGTARAEW_EYKTPD_KTY_YNNRT_E_RWEKPQE_Q
+[Candidate 12] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTQE_RWEKPQE_Q
+[Candidate 13] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 14] Partial Sequence: MGTARAEW_EYKT_D_KTYYYNNRT_E_RWEKPQE_Q
+[Candidate 15] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRT_E_RWEKPQELQ
+[Candidate 16] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 17] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTGE_RWEKPQE_Q
+[Candidate 18] Partial Sequence: MGTARAEW_EYKT_D_KTY_YNNRTGE_RWEKPQE_Q
+[Candidate 19] Partial Sequence: MGTARAEWHEYKT_D_KTY_YNNRT_E_RWEKPQE_Q
+[Candidate 20] Partial Sequence: MGTARAEW_EYKT_D_KTYYYNNRT_E_RWEKPQE_Q
+
+--- Step 12 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWGEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 3.7013 | ddG: -3.701 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTKESRWEKPQELQ
+  pTM: N/A
+  Score: 3.3474 | ddG: -3.347 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYYYNNRTQESRWEKPQELQ
+  pTM: N/A
+  Score: 3.1860 | ddG: -3.186 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTTDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6380 | ddG: -4.638 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTSESRWEKPQELQ
+  pTM: N/A
+  Score: 3.1221 | ddG: -3.122 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYYYNNRTQESRWEKPQELQ
+  pTM: N/A
+  Score: 3.1860 | ddG: -3.186 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWHEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.5515 | ddG: -4.552 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+------------------------- Step 12 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.5616
+This sequence will be used as the template for Step 13.
+-----------------------------------------------------------------
+Timing for Step 12:
+  - Candidate Generation (GPU): 19.91 s
+  - Scoring (CPU/FoldX):        46.12 s
+  - Total Step Time:              66.03 s
+
+--- Step 13 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ETRWEKPQE_Q
+[Candidate 3] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_E_RWEKPQEEQ
+[Candidate 4] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTGE_RWEKPQE_Q
+[Candidate 5] Partial Sequence: MGTARAEW_EYKTSDGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 6] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 7] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 8] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_E_RWEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEW_EYKT_DGKTYFYNNRT_E_RWEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTKE_RWEKPQE_Q
+[Candidate 11] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_E_RWEKPQE_Q
+[Candidate 12] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTQE_RWEKPQE_Q
+[Candidate 13] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_E_RWEKPQE_Q
+[Candidate 14] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTGE_RWEKPQE_Q
+[Candidate 15] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_E_RWEKPQE_Q
+[Candidate 16] Partial Sequence: MGTARAEWQEYKT_DGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 17] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 18] Partial Sequence: MGTARAEW_EYKT_DGKTYWYNNRT_E_RWEKPQE_Q
+[Candidate 19] Partial Sequence: MGTARAEW_EYKTSDGKTY_YNNRT_E_RWEKPQE_Q
+[Candidate 20] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_E_RWEKPQE_Q
+
+--- Step 13 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGETRWEKPQELQ
+  pTM: N/A
+  Score: 5.2119 | ddG: -5.212 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQEEQ
+  pTM: N/A
+  Score: 2.3573 | ddG: -2.357 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWKEYKTSDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6816 | ddG: -4.682 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.3915 | ddG: -5.391 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTKESRWEKPQELQ
+  pTM: N/A
+  Score: 3.3474 | ddG: -3.347 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYYYNNRTQESRWEKPQELQ
+  pTM: N/A
+  Score: 3.1860 | ddG: -3.186 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.9312 | ddG: -4.931 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYWYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 2.8318 | ddG: -2.832 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWKEYKTSDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6816 | ddG: -4.682 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.5616 | ddG: -5.562 kcal/mol
+
+------------------------- Step 13 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.5616
+This sequence will be used as the template for Step 14.
+-----------------------------------------------------------------
+Timing for Step 13:
+  - Candidate Generation (GPU): 18.99 s
+  - Scoring (CPU/FoldX):        63.19 s
+  - Total Step Time:              82.18 s
+
+--- Step 14 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW_EYKTKDGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQEDQ
+[Candidate 3] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQELQ
+[Candidate 4] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQELQ
+[Candidate 5] Partial Sequence: MGTARAEW_EYKTPDGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 6] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_ESRWEKPQE_Q
+[Candidate 7] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTEESRWEKPQE_Q
+[Candidate 8] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTGESRWEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEWREYKT_DGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQESQ
+[Candidate 11] Partial Sequence: MGTARAEW_EYKTADGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 12] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_ESRWEKPQE_Q
+[Candidate 13] Partial Sequence: MGTARAEW_EYKTPDGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 14] Partial Sequence: MGTARAEWGEYKT_DGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 15] Partial Sequence: MGTARAEW_EYKT_DGKTYFYNNRT_ESRWEKPQE_Q
+[Candidate 16] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQEKQ
+[Candidate 17] Partial Sequence: MGTARAEW_EYKTPDGKTY_YNNRT_ESRWEKPQE_Q
+[Candidate 18] Partial Sequence: MGTARAEW_EYKT_DGKTYYYNNRT_ESRWEKPQE_Q
+[Candidate 19] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRTKESRWEKPQE_Q
+[Candidate 20] Partial Sequence: MGTARAEW_EYKT_DGKTY_YNNRT_ESRWEKPQEVQ
+
+--- Step 14 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTKDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.8473 | ddG: -4.847 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQEDQ
+  pTM: N/A
+  Score: 2.8704 | ddG: -2.870 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTEESRWEKPQELQ
+  pTM: N/A
+  Score: 3.9607 | ddG: -3.961 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.7090 | ddG: -4.709 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQESQ
+  pTM: N/A
+  Score: 3.0381 | ddG: -3.038 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWTEYKTADGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.4094 | ddG: -4.409 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWGEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 3.7013 | ddG: -3.701 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.9573 | ddG: -4.957 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTGESRWEKPQEKQ
+  pTM: N/A
+  Score: 4.4807 | ddG: -4.481 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6519 | ddG: -4.652 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYYYNNRTKESRWEKPQELQ
+  pTM: N/A
+  Score: 3.3474 | ddG: -3.347 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYYYNNRTGESRWEKPQEVQ
+  pTM: N/A
+  Score: 3.7956 | ddG: -3.796 kcal/mol
+
+------------------------- Step 14 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWTEYKTPDGKTYFYNNRTGESRWEKPQELQ
+Best Score in Step (=-ΔΔG): 4.9573
+This sequence will be used as the template for Step 15.
+-----------------------------------------------------------------
+Timing for Step 14:
+  - Candidate Generation (GPU): 19.86 s
+  - Scoring (CPU/FoldX):        56.21 s
+  - Total Step Time:              76.07 s
+
+--- Step 15 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEW_EYKTDDGKTYFYNNRTKESRWEKPQE_Q
+[Candidate 2] Partial Sequence: MGTARAEWEEYKT_DGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 3] Partial Sequence: MGTARAEWAEYKTADGKTYFYNNRT_ESRWEKPQE_Q
+[Candidate 4] Partial Sequence: MGTARAEW_EYKTPDGKTYFYNNRT_ESRWEKPQEIQ
+[Candidate 5] Partial Sequence: MGTARAEWREYKTSDGKTYFYNNRT_ESRWEKPQE_Q
+[Candidate 6] Partial Sequence: MGTARAEWQEYKT_DGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 7] Partial Sequence: MGTARAEWLEYKT_DGKTYFYNNRT_ESRWEKPQETQ
+[Candidate 8] Partial Sequence: MGTARAEWKEYKT_DGKTYFYNNRTKESRWEKPQE_Q
+[Candidate 9] Partial Sequence: MGTARAEW_EYKTPDGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 10] Partial Sequence: MGTARAEWAEYKT_DGKTYFYNNRT_ESRWEKPQELQ
+[Candidate 11] Partial Sequence: MGTARAEWREYKT_DGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 12] Partial Sequence: MGTARAEW_EYKT_DGKTYFYNNRTGESRWEKPQEMQ
+[Candidate 13] Partial Sequence: MGTARAEWVEYKT_DGKTYFYNNRTTESRWEKPQE_Q
+[Candidate 14] Partial Sequence: MGTARAEWCEYKT_DGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 15] Partial Sequence: MGTARAEWTEYKT_DGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 16] Partial Sequence: MGTARAEWTEYKT_DGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 17] Partial Sequence: MGTARAEWQEYKTADGKTYFYNNRT_ESRWEKPQE_Q
+[Candidate 18] Partial Sequence: MGTARAEWREYKT_DGKTYFYNNRT_ESRWEKPQEIQ
+[Candidate 19] Partial Sequence: MGTARAEW_EYKTPDGKTYFYNNRTGESRWEKPQE_Q
+[Candidate 20] Partial Sequence: MGTARAEW_EYKTADGKTYFYNNRT_ESRWEKPQELQ
+
+--- Step 15 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWKEYKTDDGKTYFYNNRTKESRWEKPQELQ
+  pTM: N/A
+  Score: 3.0730 | ddG: -3.073 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWEEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.7282 | ddG: -4.728 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWAEYKTADGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 3.9100 | ddG: -3.910 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYFYNNRTGESRWEKPQEIQ
+  pTM: N/A
+  Score: 4.6548 | ddG: -4.655 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.2225 | ddG: -4.223 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWQEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.6277 | ddG: -4.628 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWLEYKTPDGKTYFYNNRTGESRWEKPQETQ
+  pTM: N/A
+  Score: 3.0745 | ddG: -3.074 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWKEYKTPDGKTYFYNNRTKESRWEKPQELQ
+  pTM: N/A
+  Score: 3.8036 | ddG: -3.804 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWVEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.8565 | ddG: -4.856 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWAEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.4904 | ddG: -4.490 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 5.1290 | ddG: -5.129 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYFYNNRTGESRWEKPQEMQ
+  pTM: N/A
+  Score: 4.9477 | ddG: -4.948 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWVEYKTPDGKTYFYNNRTTESRWEKPQELQ
+  pTM: N/A
+  Score: 1.2669 | ddG: -1.267 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWCEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.7766 | ddG: -4.777 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.9573 | ddG: -4.957 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWTEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.9573 | ddG: -4.957 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWQEYKTADGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.1608 | ddG: -4.161 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEIQ
+  pTM: N/A
+  Score: 4.6332 | ddG: -4.633 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWVEYKTPDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.8565 | ddG: -4.856 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWTEYKTADGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.1426 | ddG: -4.143 kcal/mol
+
+------------------------- Step 15 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQELQ
+Best Score in Step (=-ΔΔG): 5.1290
+This sequence will be used as the template for Step 16.
+-----------------------------------------------------------------
+Timing for Step 15:
+  - Candidate Generation (GPU): 19.50 s
+  - Scoring (CPU/FoldX):        61.62 s
+  - Total Step Time:              81.12 s
+
+--- Step 16 Partial Sequences ---
+[Candidate 1] Partial Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQEYQ
+[Candidate 2] Partial Sequence: MGTARAEWREYKTEDGKTYFYNNRTGESRWEKPQELQ
+[Candidate 3] Partial Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQEDQ
+[Candidate 4] Partial Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQEFQ
+[Candidate 5] Partial Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEYQ
+[Candidate 6] Partial Sequence: MGTARAEWREYKTKDGKTYFYNNRTGESRWEKPQELQ
+[Candidate 7] Partial Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEAQ
+[Candidate 8] Partial Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEEQ
+[Candidate 9] Partial Sequence: MGTARAEWREYKTGDGKTYFYNNRTGESRWEKPQEEQ
+[Candidate 10] Partial Sequence: MGTARAEWREYKTADGKTYFYNNRTGESRWEKPQESQ
+[Candidate 11] Partial Sequence: MGTARAEWREYKTADGKTYFYNNRTGESRWEKPQESQ
+[Candidate 12] Partial Sequence: MGTARAEWREYKTRDGKTYFYNNRTGESRWEKPQELQ
+[Candidate 13] Partial Sequence: MGTARAEWREYKTHDGKTYFYNNRTGESRWEKPQELQ
+[Candidate 14] Partial Sequence: MGTARAEWREYKTKDGKTYFYNNRTGESRWEKPQELQ
+[Candidate 15] Partial Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEFQ
+[Candidate 16] Partial Sequence: MGTARAEWREYKTRDGKTYFYNNRTGESRWEKPQETQ
+[Candidate 17] Partial Sequence: MGTARAEWREYKTLDGKTYFYNNRTGESRWEKPQEAQ
+[Candidate 18] Partial Sequence: MGTARAEWREYKTKDGKTYFYNNRTGESRWEKPQEAQ
+[Candidate 19] Partial Sequence: MGTARAEWREYKTADGKTYFYNNRTGESRWEKPQEGQ
+[Candidate 20] Partial Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEEQ
+
+--- Step 16 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQEYQ
+  pTM: N/A
+  Score: 4.5282 | ddG: -4.528 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MGTARAEWREYKTEDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.2806 | ddG: -4.281 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQEDQ
+  pTM: N/A
+  Score: 2.1677 | ddG: -2.168 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MGTARAEWREYKTSDGKTYFYNNRTGESRWEKPQEFQ
+  pTM: N/A
+  Score: 4.7441 | ddG: -4.744 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEYQ
+  pTM: N/A
+  Score: 5.4165 | ddG: -5.416 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MGTARAEWREYKTKDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.5770 | ddG: -4.577 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEAQ
+  pTM: N/A
+  Score: 4.2066 | ddG: -4.207 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEEQ
+  pTM: N/A
+  Score: 3.1816 | ddG: -3.182 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MGTARAEWREYKTGDGKTYFYNNRTGESRWEKPQEEQ
+  pTM: N/A
+  Score: 1.8162 | ddG: -1.816 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MGTARAEWREYKTADGKTYFYNNRTGESRWEKPQESQ
+  pTM: N/A
+  Score: 2.6574 | ddG: -2.657 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MGTARAEWREYKTADGKTYFYNNRTGESRWEKPQESQ
+  pTM: N/A
+  Score: 2.6574 | ddG: -2.657 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MGTARAEWREYKTRDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.5860 | ddG: -4.586 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MGTARAEWREYKTHDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 3.4425 | ddG: -3.442 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MGTARAEWREYKTKDGKTYFYNNRTGESRWEKPQELQ
+  pTM: N/A
+  Score: 4.5770 | ddG: -4.577 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEFQ
+  pTM: N/A
+  Score: 5.9764 | ddG: -5.976 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MGTARAEWREYKTRDGKTYFYNNRTGESRWEKPQETQ
+  pTM: N/A
+  Score: 2.9526 | ddG: -2.953 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MGTARAEWREYKTLDGKTYFYNNRTGESRWEKPQEAQ
+  pTM: N/A
+  Score: 3.4422 | ddG: -3.442 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MGTARAEWREYKTKDGKTYFYNNRTGESRWEKPQEAQ
+  pTM: N/A
+  Score: 3.7833 | ddG: -3.783 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MGTARAEWREYKTADGKTYFYNNRTGESRWEKPQEGQ
+  pTM: N/A
+  Score: 3.5558 | ddG: -3.556 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEEQ
+  pTM: N/A
+  Score: 3.1816 | ddG: -3.182 kcal/mol
+
+------------------------- Step 16 Summary -------------------------
+Best Candidate in Step:
+MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEFQ
+Best Score in Step (=-ΔΔG): 5.9764
+This sequence will be used as the template for Step 17.
+-----------------------------------------------------------------
+Timing for Step 16:
+  - Candidate Generation (GPU): 19.43 s
+  - Scoring (CPU/FoldX):        63.39 s
+  - Total Step Time:              82.82 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 16) ---
+Score (=-ΔΔG): 5.9764
+FoldX ΔΔG vs. Wild-Type: -5.9764 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 16
+Optimized Sequence:
+MGTARAEWREYKTPDGKTYFYNNRTGESRWEKPQEFQ
+
+Final Score (=-ΔΔG): 5.9764
+Final FoldX ΔΔG vs. Wild-Type: -5.9764 kcal/mol
+===================================

@@ -1,0 +1,38 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 2ZAJ.pdb
+Chain: A
+
+Wildtype:  GSSGSSGLDSELELPAGWEKIEDPVYGIYYVDHINRKTQYENPSGPSSG
+Optimized: MSSGSSGYLNELAIRAALEKIELAVYGTYTFVHISRKLQYENLAGPIIV
+
+Total mutations: 22
+ESM3-FoldX combined ΔΔG: -6.424 kcal/mol
+Sum of individual ΔΔG: 18.512 kcal/mol
+Epistasis: 24.935 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG        Effect  ThermoMPNN_ddG  Difference
+        1     G      M      G1M   0.798128       Neutral          0.1894    0.608728
+        8     L      Y      L8Y  -0.096811       Neutral         -0.1125    0.015689
+        9     D      L      D9L  -1.172020   Stabilizing          0.0059   -1.177920
+       10     S      N     S10N  -0.284845       Neutral         -0.0948   -0.190045
+       13     E      A     E13A   0.058917       Neutral          0.2225   -0.163583
+       14     L      I     L14I   0.149660       Neutral          0.5896   -0.439940
+       15     P      R     P15R   1.104560 Destabilizing          0.7531    0.351460
+       17     G      A     G17A   4.460750 Destabilizing          1.7698    2.690950
+       18     W      L     W18L   1.608880 Destabilizing          1.3919    0.216980
+       23     D      L     D23L   0.309509       Neutral          1.4418   -1.132291
+       24     P      A     P24A   0.764951       Neutral          0.4779    0.287051
+       28     I      T     I28T   0.942873       Neutral         -0.0434    0.986273
+       30     Y      T     Y30T   2.356000 Destabilizing          1.1501    1.205900
+       31     V      F     V31F   0.344078       Neutral          0.1779    0.166178
+       32     D      V     D32V   4.560550 Destabilizing          1.9581    2.602450
+       35     N      S     N35S   1.659570 Destabilizing         -0.1083    1.767870
+       38     T      L     T38L  -1.025980   Stabilizing         -0.0071   -1.018880
+       43     P      L     P43L   0.940553       Neutral          0.3433    0.597253
+       44     S      A     S44A  -1.021330   Stabilizing          0.3594   -1.380730
+       47     S      I     S47I   0.036019       Neutral          0.2256   -0.189581
+       48     S      I     S48I   0.425834       Neutral          0.3341    0.091734
+       49     G      V     G49V   1.592000 Destabilizing          0.1574    1.434600

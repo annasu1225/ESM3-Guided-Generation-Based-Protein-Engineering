@@ -1,0 +1,9 @@
+# FoldX Individual Mutation Results
+# PDB: 1ZNJ.pdb, Chain: A
+# Wildtype: GIVEQCCTSICSLYQLENYCN
+# Optimized: SIMEQCCTSICSLYQLENYCN
+# Generated: 2025-12-07 12:28:37
+#
+Position	WT_AA	Mut_AA	Mutation	FoldX_ddG	Effect
+1	G	S	G1S	-1.30787	Stabilizing
+3	V	M	V3M	-1.68474	Stabilizing

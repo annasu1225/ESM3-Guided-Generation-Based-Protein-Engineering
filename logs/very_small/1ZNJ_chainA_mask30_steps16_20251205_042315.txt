@@ -1,0 +1,2205 @@
+=================================================================
+ESM3-FoldX Guided Generation Log
+Run Timestamp: 20251205_042315
+=================================================================
+
+--- RUN PARAMETERS ---
+PDB File: 1ZNJ.pdb
+Masking Percentage: 30.0%
+Decoding Steps: 16
+Samples per Step: 20
+
+--- SEQUENCE SETUP ---
+Wild-Type Sequence Length: 21
+Original Wild-Type Sequence:
+GIVEQCCTSICSLYQLENYCN
+
+Masked Template for Generation (6 masks):
+GIVEQ_C_SICSL__LENY__
+=================================================================
+
+--- Step 1 Partial Sequences ---
+[Candidate 1] Partial Sequence: GIVEQ_CVSICSL__LENY__
+[Candidate 2] Partial Sequence: GIVEQ_C_SICSL__LENYV_
+[Candidate 3] Partial Sequence: GIVEQ_CESICSL__LENY__
+[Candidate 4] Partial Sequence: GIVEQ_C_SICSL__LENYV_
+[Candidate 5] Partial Sequence: GIVEQ_CKSICSL__LENY__
+[Candidate 6] Partial Sequence: GIVEQ_C_SICSLV_LENY__
+[Candidate 7] Partial Sequence: GIVEQ_C_SICSL__LENY_Y
+[Candidate 8] Partial Sequence: GIVEQ_C_SICSL__LENY_L
+[Candidate 9] Partial Sequence: GIVEQ_CTSICSL__LENY__
+[Candidate 10] Partial Sequence: GIVEQRC_SICSL__LENY__
+[Candidate 11] Partial Sequence: GIVEQ_C_SICSL_SLENY__
+[Candidate 12] Partial Sequence: GIVEQ_C_SICSL_YLENY__
+[Candidate 13] Partial Sequence: GIVEQ_C_SICSLS_LENY__
+[Candidate 14] Partial Sequence: GIVEQ_C_SICSL__LENY_L
+[Candidate 15] Partial Sequence: GIVEQ_CASICSL__LENY__
+[Candidate 16] Partial Sequence: GIVEQ_CESICSL__LENY__
+[Candidate 17] Partial Sequence: GIVEQ_C_SICSL__LENY_A
+[Candidate 18] Partial Sequence: GIVEQLC_SICSL__LENY__
+[Candidate 19] Partial Sequence: GIVEQ_C_SICSL__LENY_K
+[Candidate 20] Partial Sequence: GIVEQ_C_SICSL__LENYL_
+
+--- FOLDX Log for sequence GIVEQLCTSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:36 2025
+Total time spend: 25.70 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLS... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15S,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Mutating residue = GLNA15 into SER
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:36 2025
+Total time spend: 25.76 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCASICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8A,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into ALA
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:38 2025
+Total time spend: 27.32 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCVSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8V,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into VAL
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:39 2025
+Total time spend: 28.18 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLY... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15Y,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into TYR
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:40 2025
+Total time spend: 28.98 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLVL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14V,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into VAL
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:40 2025
+Total time spend: 29.78 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20V,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into VAL
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:41 2025
+Total time spend: 30.75 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20V,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into VAL
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:41 2025
+Total time spend: 30.80 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCESICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8E,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Mutating residue = THRA8 into GLU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:42 2025
+Total time spend: 31.20 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCESICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8E,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Mutating residue = THRA8 into GLU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:42 2025
+Total time spend: 31.25 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:42 2025
+Total time spend: 31.82 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21A;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into ALA
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:43 2025
+Total time spend: 32.04 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:43 2025
+Total time spend: 32.08 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:43 2025
+Total time spend: 32.25 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:43 2025
+Total time spend: 32.30 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLSL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14S,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Mutating residue = TYRA14 into SER
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:43 2025
+Total time spend: 32.54 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21Y;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into TYR
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:44 2025
+Total time spend: 33.07 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8L,YA14L,QA15L,CA20L,NA21K;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LYS
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:44 2025
+Total time spend: 33.32 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQRCLSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6R,TA8L,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = THRA8 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Mutating residue = CYSA6 into ARG
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:48 2025
+Total time spend: 37.50 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQLCKSICSLLL... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading CA6L,TA8K,YA14L,QA15L,CA20L,NA21L;
+Residue to Mutate CYSA6 has residue index 5
+Residue to Mutate THRA8 has residue index 7
+Residue to Mutate TYRA14 has residue index 13
+Residue to Mutate GLNA15 has residue index 14
+Residue to Mutate CYSA20 has residue index 19
+Residue to Mutate ASNA21 has residue index 20
+Mutating residue = CYSA6 into LEU
+Mutating residue = TYRA14 into LEU
+Mutating residue = GLNA15 into LEU
+Mutating residue = CYSA20 into LEU
+Mutating residue = ASNA21 into LEU
+Mutating residue = THRA8 into LYS
+Your file run OK
+End time of FoldX: Fri Dec  5 04:24:48 2025
+Total time spend: 37.76 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQLCVSICSLLLLENYLL
+  pTM: N/A
+  Score: -6.9322 | ddG: 6.932 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYVL
+  pTM: N/A
+  Score: -7.3575 | ddG: 7.358 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQLCESICSLLLLENYLL
+  pTM: N/A
+  Score: -5.9416 | ddG: 5.942 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYVL
+  pTM: N/A
+  Score: -7.3575 | ddG: 7.358 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -5.7249 | ddG: 5.725 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIVEQLCLSICSLVLLENYLL
+  pTM: N/A
+  Score: -6.4012 | ddG: 6.401 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLY
+  pTM: N/A
+  Score: -6.6913 | ddG: 6.691 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLL
+  pTM: N/A
+  Score: -7.2141 | ddG: 7.214 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQLCTSICSLLLLENYLL
+  pTM: N/A
+  Score: -6.3713 | ddG: 6.371 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQRCLSICSLLLLENYLL
+  pTM: N/A
+  Score: -8.5386 | ddG: 8.539 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQLCLSICSLLSLENYLL
+  pTM: N/A
+  Score: -7.3860 | ddG: 7.386 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQLCLSICSLLYLENYLL
+  pTM: N/A
+  Score: -7.5749 | ddG: 7.575 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQLCLSICSLSLLENYLL
+  pTM: N/A
+  Score: -6.0380 | ddG: 6.038 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLL
+  pTM: N/A
+  Score: -7.2141 | ddG: 7.214 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQLCASICSLLLLENYLL
+  pTM: N/A
+  Score: -6.4646 | ddG: 6.465 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQLCESICSLLLLENYLL
+  pTM: N/A
+  Score: -5.9416 | ddG: 5.942 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLA
+  pTM: N/A
+  Score: -6.6780 | ddG: 6.678 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLL
+  pTM: N/A
+  Score: -7.2141 | ddG: 7.214 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLK
+  pTM: N/A
+  Score: -6.8263 | ddG: 6.826 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GIVEQLCLSICSLLLLENYLL
+  pTM: N/A
+  Score: -7.2141 | ddG: 7.214 kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+GIVEQLCKSICSLLLLENYLL
+Best Score in Step (=-ΔΔG): -5.7249
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 39.46 s
+  - Scoring (CPU/FoldX):        43.94 s
+  - Total Step Time:              83.41 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: GIVEQVCKSICSL__LENY__
+[Candidate 2] Partial Sequence: GIVEQ_CKSICSL__LENY_G
+[Candidate 3] Partial Sequence: GIVEQ_CKSICSL__LENY_I
+[Candidate 4] Partial Sequence: GIVEQ_CKSICSL_QLENY__
+[Candidate 5] Partial Sequence: GIVEQ_CKSICSL_KLENY__
+[Candidate 6] Partial Sequence: GIVEQ_CKSICSL__LENY_S
+[Candidate 7] Partial Sequence: GIVEQ_CKSICSL_ILENY__
+[Candidate 8] Partial Sequence: GIVEQ_CKSICSLA_LENY__
+[Candidate 9] Partial Sequence: GIVEQ_CKSICSL_LLENY__
+[Candidate 10] Partial Sequence: GIVEQ_CKSICSL_ILENY__
+[Candidate 11] Partial Sequence: GIVEQLCKSICSL__LENY__
+[Candidate 12] Partial Sequence: GIVEQ_CKSICSL_ELENY__
+[Candidate 13] Partial Sequence: GIVEQ_CKSICSL__LENYD_
+[Candidate 14] Partial Sequence: GIVEQKCKSICSL__LENY__
+[Candidate 15] Partial Sequence: GIVEQ_CKSICSL__LENY_D
+[Candidate 16] Partial Sequence: GIVEQGCKSICSL__LENY__
+[Candidate 17] Partial Sequence: GIVEQLCKSICSL__LENY__
+[Candidate 18] Partial Sequence: GIVEQ_CKSICSL__LENYL_
+[Candidate 19] Partial Sequence: GIVEQ_CKSICSL__LENYC_
+[Candidate 20] Partial Sequence: GIVEQPCKSICSL__LENY__
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQVCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -7.0379 | ddG: 7.038 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLG
+  pTM: N/A
+  Score: -5.3371 | ddG: 5.337 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLI
+  pTM: N/A
+  Score: -5.6140 | ddG: 5.614 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIVEQLCKSICSLLQLENYLL
+  pTM: N/A
+  Score: -6.5133 | ddG: 6.513 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQLCKSICSLLKLENYLK
+  pTM: N/A
+  Score: -5.6718 | ddG: 5.672 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLS
+  pTM: N/A
+  Score: -5.6839 | ddG: 5.684 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQLCKSICSLLILENYLK
+  pTM: N/A
+  Score: -5.3783 | ddG: 5.378 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GIVEQLCKSICSLALLENYLL
+  pTM: N/A
+  Score: -5.8466 | ddG: 5.847 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -5.7249 | ddG: 5.725 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQLCKSICSLLILENYLK
+  pTM: N/A
+  Score: -5.3783 | ddG: 5.378 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -5.7249 | ddG: 5.725 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQLCKSICSLEELENYLX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYDL
+  pTM: N/A
+  Score: -8.6935 | ddG: 8.693 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQKCKSICSLLLLENYLK
+  pTM: N/A
+  Score: -6.8515 | ddG: 6.852 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLD
+  pTM: N/A
+  Score: -5.5353 | ddG: 5.535 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQGCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -8.7247 | ddG: 8.725 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -5.7249 | ddG: 5.725 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -5.7249 | ddG: 5.725 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQCCKSICSLYELENYCN
+  pTM: N/A
+  Score: 1.3426 | ddG: -1.343 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GIVEQPCKSICSLLLLENYLL
+  pTM: N/A
+  Score: -12.9868 | ddG: 12.987 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+GIVEQCCKSICSLYELENYCN
+Best Score in Step (=-ΔΔG): 1.3426
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 21.98 s
+  - Scoring (CPU/FoldX):        104.32 s
+  - Total Step Time:              126.30 s
+
+--- Step 3 Partial Sequences ---
+[Candidate 1] Partial Sequence: GIVEQCCKSICSL__LENYC_
+[Candidate 2] Partial Sequence: GIVEQCCKSICSL__LENYC_
+[Candidate 3] Partial Sequence: GIVEQ_CKSICSL__LENYCN
+[Candidate 4] Partial Sequence: GIVEQ_CKSICSL_QLENYC_
+[Candidate 5] Partial Sequence: GIVEQ_CKSICSL_ELENYC_
+[Candidate 6] Partial Sequence: GIVEQ_CKSICSL_LLENYC_
+[Candidate 7] Partial Sequence: GIVEQ_CKSICSLY_LENYC_
+[Candidate 8] Partial Sequence: GIVEQ_CKSICSLF_LENYC_
+[Candidate 9] Partial Sequence: GIVEQ_CKSICSLY_LENYC_
+[Candidate 10] Partial Sequence: GIVEQ_CKSICSL_QLENYC_
+[Candidate 11] Partial Sequence: GIVEQ_CKSICSL__LENYCN
+[Candidate 12] Partial Sequence: GIVEQ_CKSICSLW_LENYC_
+[Candidate 13] Partial Sequence: GIVEQCCKSICSL__LENYC_
+[Candidate 14] Partial Sequence: GIVEQCCKSICSL__LENYC_
+[Candidate 15] Partial Sequence: GIVEQ_CKSICSL__LENYCN
+[Candidate 16] Partial Sequence: GIVEQCCKSICSL__LENYC_
+[Candidate 17] Partial Sequence: GIVEQ_CKSICSL__LENYCN
+[Candidate 18] Partial Sequence: GIVEQ_CKSICSL__LENYCY
+[Candidate 19] Partial Sequence: GIVEQ_CKSICSL__LENYCN
+[Candidate 20] Partial Sequence: GIVEQ_CKSICSL__LENYCD
+
+--- Step 3 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQCCKSICSLYELENYCN
+  pTM: N/A
+  Score: 1.3426 | ddG: -1.343 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIVEQCCKSICSLELLENYCN
+  pTM: N/A
+  Score: 2.5808 | ddG: -2.581 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GIVEQCCKSICSLFELENYCQ
+  pTM: N/A
+  Score: 1.8761 | ddG: -1.876 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQCCKSICSLWQLENYCN
+  pTM: N/A
+  Score: 0.3450 | ddG: -0.345 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCY
+  pTM: N/A
+  Score: 1.2711 | ddG: -1.271 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQCCKSICSLYQLENYCN
+  pTM: N/A
+  Score: 0.4835 | ddG: -0.484 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GIVEQCCKSICSLYELENYCD
+  pTM: N/A
+  Score: 1.0613 | ddG: -1.061 kcal/mol
+
+------------------------- Step 3 Summary -------------------------
+Best Candidate in Step:
+GIVEQCCKSICSLELLENYCN
+Best Score in Step (=-ΔΔG): 2.5808
+This sequence will be used as the template for Step 4.
+-----------------------------------------------------------------
+Timing for Step 3:
+  - Candidate Generation (GPU): 20.92 s
+  - Scoring (CPU/FoldX):        34.91 s
+  - Total Step Time:              55.83 s
+
+--- Step 4 Partial Sequences ---
+[Candidate 1] Partial Sequence: GIVEQ_CKSICSLDLLENYC_
+[Candidate 2] Partial Sequence: GIVEQ_CKSICSL_LLENYCK
+[Candidate 3] Partial Sequence: GIVEQ_CKSICSLKLLENYC_
+[Candidate 4] Partial Sequence: GIVEQCCKSICSL_LLENYC_
+[Candidate 5] Partial Sequence: GIVEQ_CKSICSL_LLENYCP
+[Candidate 6] Partial Sequence: GIVEQ_CKSICSL_LLENYCK
+[Candidate 7] Partial Sequence: GIVEQ_CKSICSLELLENYC_
+[Candidate 8] Partial Sequence: GIVEQ_CKSICSL_LLENYCK
+[Candidate 9] Partial Sequence: GIVEQ_CKSICSLSLLENYC_
+[Candidate 10] Partial Sequence: GIVEQCCKSICSL_LLENYC_
+[Candidate 11] Partial Sequence: GIVEQWCKSICSL_LLENYC_
+[Candidate 12] Partial Sequence: GIVEQ_CKSICSLSLLENYC_
+[Candidate 13] Partial Sequence: GIVEQ_CKSICSL_LLENYCE
+[Candidate 14] Partial Sequence: GIVEQ_CKSICSLELLENYC_
+[Candidate 15] Partial Sequence: GIVEQ_CKSICSL_LLENYCX
+[Candidate 16] Partial Sequence: GIVEQCCKSICSL_LLENYC_
+[Candidate 17] Partial Sequence: GIVEQCCKSICSL_LLENYC_
+[Candidate 18] Partial Sequence: GIVEQ_CKSICSL_LLENYCN
+[Candidate 19] Partial Sequence: GIVEQCCKSICSL_LLENYC_
+[Candidate 20] Partial Sequence: GIVEQCCKSICSL_LLENYC_
+
+--- Step 4 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCK
+  pTM: N/A
+  Score: 2.6258 | ddG: -2.626 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQCCKSICSLKLLENYCK
+  pTM: N/A
+  Score: 1.0614 | ddG: -1.061 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQCCKSICSLFLLENYCP
+  pTM: N/A
+  Score: -2.8805 | ddG: 2.880 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCK
+  pTM: N/A
+  Score: 2.6258 | ddG: -2.626 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQCCKSICSLELLENYCN
+  pTM: N/A
+  Score: 2.5808 | ddG: -2.581 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCK
+  pTM: N/A
+  Score: 2.6258 | ddG: -2.626 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQCCKSICSLSLLENYCK
+  pTM: N/A
+  Score: 1.2720 | ddG: -1.272 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQWCKSICSLLLLENYCL
+  pTM: N/A
+  Score: -6.2201 | ddG: 6.220 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQCCKSICSLSLLENYCK
+  pTM: N/A
+  Score: 1.2720 | ddG: -1.272 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCE
+  pTM: N/A
+  Score: 1.2342 | ddG: -1.234 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQCCKSICSLELLENYCN
+  pTM: N/A
+  Score: 2.5808 | ddG: -2.581 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQLCKSICSLLLLENYCX
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GIVEQCCKSICSLYLLENYCN
+  pTM: N/A
+  Score: 1.2877 | ddG: -1.288 kcal/mol
+
+------------------------- Step 4 Summary -------------------------
+Best Candidate in Step:
+GIVEQCCKSICSLDLLENYCN
+Best Score in Step (=-ΔΔG): 2.7193
+This sequence will be used as the template for Step 5.
+-----------------------------------------------------------------
+Timing for Step 4:
+  - Candidate Generation (GPU): 19.93 s
+  - Scoring (CPU/FoldX):        66.62 s
+  - Total Step Time:              86.56 s
+
+--- Step 5 Partial Sequences ---
+[Candidate 1] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 2] Partial Sequence: GIVEQ_CKSICSLDLLENYCN
+[Candidate 3] Partial Sequence: GIVEQ_CKSICSLDLLENYCP
+[Candidate 4] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 5] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 6] Partial Sequence: GIVEQ_CKSICSLDLLENYCN
+[Candidate 7] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 8] Partial Sequence: GIVEQ_CKSICSLDLLENYCD
+[Candidate 9] Partial Sequence: GIVEQ_CKSICSLDLLENYCN
+[Candidate 10] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 11] Partial Sequence: GIVEQ_CKSICSLDLLENYCD
+[Candidate 12] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 13] Partial Sequence: GIVEQ_CKSICSLDLLENYCN
+[Candidate 14] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 15] Partial Sequence: GIVEQ_CKSICSLDLLENYCN
+[Candidate 16] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 17] Partial Sequence: GIVEQ_CKSICSLDLLENYCD
+[Candidate 18] Partial Sequence: GIVEQ_CKSICSLDLLENYCN
+[Candidate 19] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+[Candidate 20] Partial Sequence: GIVEQCCKSICSLDLLENYC_
+
+--- Step 5 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCP
+  pTM: N/A
+  Score: -1.6187 | ddG: 1.619 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCD
+  pTM: N/A
+  Score: 2.0358 | ddG: -2.036 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCD
+  pTM: N/A
+  Score: 2.0358 | ddG: -2.036 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCD
+  pTM: N/A
+  Score: 2.0358 | ddG: -2.036 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+------------------------- Step 5 Summary -------------------------
+Best Candidate in Step:
+GIVEQCCKSICSLDLLENYCN
+Best Score in Step (=-ΔΔG): 2.7193
+This sequence will be used as the template for Step 6.
+-----------------------------------------------------------------
+Timing for Step 5:
+  - Candidate Generation (GPU): 19.49 s
+  - Scoring (CPU/FoldX):        36.35 s
+  - Total Step Time:              55.84 s
+
+--- Step 6 Partial Sequences ---
+[Candidate 1] Partial Sequence: GIVEQCCKSICSLDLLENYCD
+[Candidate 2] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 3] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 4] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 5] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 6] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 7] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 8] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 9] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 10] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 11] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 12] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 13] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 14] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 15] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 16] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 17] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 18] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 19] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+[Candidate 20] Partial Sequence: GIVEQCCKSICSLDLLENYCN
+
+--- Step 6 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCD
+  pTM: N/A
+  Score: 2.0358 | ddG: -2.036 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GIVEQCCKSICSLDLLENYCN
+  pTM: N/A
+  Score: 2.7193 | ddG: -2.719 kcal/mol
+
+------------------------- Step 6 Summary -------------------------
+Best Candidate in Step:
+GIVEQCCKSICSLDLLENYCN
+Best Score in Step (=-ΔΔG): 2.7193
+This sequence will be used as the template for Step 7.
+-----------------------------------------------------------------
+Timing for Step 6:
+  - Candidate Generation (GPU): 19.33 s
+  - Scoring (CPU/FoldX):        5.06 s
+  - Total Step Time:              24.39 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 6) ---
+Score (=-ΔΔG): 2.7193
+FoldX ΔΔG vs. Wild-Type: -2.7193 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 4
+Optimized Sequence:
+GIVEQCCKSICSLDLLENYCN
+
+Final Score (=-ΔΔG): 2.7193
+Final FoldX ΔΔG vs. Wild-Type: -2.7193 kcal/mol
+===================================

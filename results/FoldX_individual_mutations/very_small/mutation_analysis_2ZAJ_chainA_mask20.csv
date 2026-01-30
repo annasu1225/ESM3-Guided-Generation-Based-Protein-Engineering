@@ -1,0 +1,5 @@
+Position,WT_AA,Mut_AA,Mutation,FoldX_ddG,Effect,ThermoMPNN_ddG,Difference
+2,S,K,S2K,-0.576583,Neutral,0.2767,-0.853283
+18,W,Y,W18Y,0.259707,Neutral,0.9514,-0.691693
+40,Y,S,Y40S,-0.119867,Neutral,0.2229,-0.342767
+41,E,D,E41D,-0.164018,Neutral,0.1983,-0.36231800000000003

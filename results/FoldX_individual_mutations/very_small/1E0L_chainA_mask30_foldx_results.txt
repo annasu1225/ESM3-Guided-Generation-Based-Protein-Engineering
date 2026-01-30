@@ -1,0 +1,14 @@
+# FoldX Individual Mutation Results
+# PDB: 1E0L.pdb, Chain: A
+# Wildtype: GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK
+# Optimized: GATAASGWQIYKDADGKDYYYNNRTGESTWEKPQELK
+# Generated: 2025-12-07 11:58:54
+#
+Position	WT_AA	Mut_AA	Mutation	FoldX_ddG	Effect
+5	V	A	V5A	-0.456904	Neutral
+7	E	G	E7G	-2.47929	Stabilizing
+9	T	Q	T9Q	0.158911	Neutral
+10	E	I	E10I	-0.0608976	Neutral
+13	T	D	T13D	-0.436582	Neutral
+18	T	D	T18D	1.16756	Destabilizing
+26	L	G	L26G	-2.42586	Stabilizing

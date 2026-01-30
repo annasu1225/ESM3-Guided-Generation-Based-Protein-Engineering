@@ -1,0 +1,28 @@
+================================================================================
+MUTATION ANALYSIS REPORT
+================================================================================
+
+Protein: 1HUE.pdb
+Chain: A
+
+Wildtype:  MNKTELINAVAETSGLSKKDATKAVDAVFDSITEALRKGDKVQLIGFGNFEVRERAARKGRNPQTGEEMEIPASKVPAFKPGKALKDAVK
+Optimized: MNKTELIAAVAETTGLTKKDAEKAVDAVFDFITEALRKGDKVLLIGFGNFEVRKRKARKGRNPQTGEPMMIPAKKVPAFKPGKVLKDAVK
+
+Total mutations: 12
+ESM3-FoldX combined ΔΔG: -5.486 kcal/mol
+Sum of individual ΔΔG: -2.786 kcal/mol
+Epistasis: 2.700 kcal/mol
+
+ Position WT_AA Mut_AA Mutation  FoldX_ddG      Effect  ThermoMPNN_ddG  Difference
+        8     N      A      N8A  -0.625196     Neutral          0.0078   -0.632996
+       14     S      T     S14T   0.764805     Neutral         -0.1094    0.874205
+       17     S      T     S17T   0.630259     Neutral         -0.0587    0.688959
+       22     T      E     T22E  -1.146870 Stabilizing         -0.3636   -0.783270
+       31     S      F     S31F  -1.501290 Stabilizing         -0.3532   -1.148090
+       43     Q      L     Q43L  -0.737907     Neutral         -0.2043   -0.533607
+       54     E      K     E54K  -0.391429     Neutral          0.4519   -0.843329
+       56     A      K     A56K   0.104017     Neutral         -0.0380    0.142017
+       68     E      P     E68P  -0.145425     Neutral          0.6866   -0.832025
+       70     E      M     E70M  -0.698256     Neutral          0.1117   -0.809956
+       74     S      K     S74K   0.953222     Neutral          0.1182    0.835022
+       84     A      V     A84V   0.008044     Neutral          0.0134   -0.005356

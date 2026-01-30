@@ -1,4 +1,3 @@
-
 # All packages used in this script
 import os
 import uuid
@@ -13,8 +12,8 @@ import torch
 from tqdm import tqdm
 from esm.models.esm3 import ESM3
 from esm.sdk.api import ESMProtein, GenerationConfig
-from guided_generation import ESM3GuidedDecoding, GuidedDecodingScoringFunction
-from scoring_utils import FoldXScorer, parse_pdb_chain_sequence_with_mapping, foldx_repair_pdb, plot_ddg_history
+from .guided_generation import ESM3GuidedDecoding, GuidedDecodingScoringFunction
+from .scoring_utils import FoldXScorer, parse_pdb_chain_sequence_with_mapping, foldx_repair_pdb, plot_ddg_history
 from multiprocessing import Pool, cpu_count, Manager
 from functools import partial
 import matplotlib.pyplot as plt
@@ -35,11 +34,14 @@ except RuntimeError:
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # --- Path and Execution Settings ---
-_base_path = os.path.expandvars("$SCRATCH/esm3-gen/foldx")
-FOLDX_WORKDIR = os.path.expandvars(os.environ.get("FOLDX_WORKDIR", _base_path))
-FOLDX_EXEC    = os.path.expandvars(os.environ.get("FOLDX_EXEC", os.path.join(_base_path, "foldx_20251231")))
+# _base_path = os.path.expandvars("$SCRATCH/esm3-gen/foldx")
+# FOLDX_WORKDIR = os.path.expandvars(os.environ.get("FOLDX_WORKDIR", _base_path))
+# FOLDX_EXEC    = os.path.expandvars(os.environ.get("FOLDX_EXEC", os.path.join(_base_path, "foldx_20251231")))
 # FOLDX_EXEC     = "/pscratch/sd/a/ananda/ESM3-Guided-Generation-Based-Protein-Engineering/foldx/foldx_20251231"
 # FOLDX_WORKDIR  = "/pscratch/sd/a/ananda/ESM3-Guided-Generation-Based-Protein-Engineering/foldx"
+
+FOLDX_EXEC     = "/pscratch/sd/a/ananda/ESM3-Guided-Generation-Based-Protein-Engineering/protddg-bench/pdb_by_category/Medium/foldx_20251231"
+FOLDX_WORKDIR  = "/pscratch/sd/a/ananda/ESM3-Guided-Generation-Based-Protein-Engineering/protddg-bench/pdb_by_category/Medium"
 
 # --- Protein and Masking Settings to test for individual protein without batch job ---
 
@@ -61,13 +63,13 @@ FOLDX_EXEC    = os.path.expandvars(os.environ.get("FOLDX_EXEC", os.path.join(_ba
 # --- FoldX Settings ---
 
 NUMBER_OF_RUNS = 1
-TIMEOUT_SEC    = 1800
+TIMEOUT_SEC    = 6000
 CLEANUP_TMP    = True 
 CACHE_DIR      = os.path.join(FOLDX_WORKDIR, "foldx_cache")
 VERBOSE_FOLDX  = False
 
 DEFAULT_LOG_DIR = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "..", "..", "logs")
+    os.path.join(os.path.dirname(__file__), "..", "..", "logs", "medium")
 )
 
 USE_STARTING_MUTATIONS = False
@@ -168,9 +170,13 @@ def main():
     if log_file:
         log_filepath = log_file
     else:
-        log_filepath = os.path.join(
-            DEFAULT_LOG_DIR, f"generation_log_{timestamp}.txt"
-        )
+        # log_filepath = os.path.join(
+        #     DEFAULT_LOG_DIR, f"generation_log_{timestamp}.txt"
+        # )
+        pdb_base = os.path.splitext(PDB_FILENAME)[0]
+        mask_str = f"{int(MASKING_PERCENTAGE * 100)}"
+        log_filename = f"{pdb_base}_chain{CHAIN_ID}_mask{mask_str}_steps{NUM_DECODING_STEPS}_{timestamp}.txt"
+        log_filepath = os.path.join(DEFAULT_LOG_DIR, log_filename)
 
     log_dirname = os.path.dirname(log_filepath) or "."
     os.makedirs(log_dirname, exist_ok=True)
@@ -197,16 +203,18 @@ def main():
     print(header_text)
     
     # --- 3. Initialize Model and Run Guided Generation ---
+       # --- 3. Initialize Model and Run Guided Generation ---
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"\nLoading ESM3 model to {device}...")
     model = ESM3.from_pretrained().to(device).float()
+
 
     scorer_kwargs = {
         'foldx_exec': FOLDX_EXEC,
         'foldx_workdir': FOLDX_WORKDIR,
         'cache_dir': CACHE_DIR, 
         'number_of_runs': 1,
-        'timeout_sec': 1800,
+        'timeout_sec': 6000,
         'cleanup_tmp': True,
         'verbose_foldx': False,
 }
@@ -281,4 +289,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-    
+  # python main.py --pdb_filename 3HHR.pdb --chain_id A --masking_percentage 0.30 --num_decoding_steps 40 --num_samples_per_step 20 --num_worker 20

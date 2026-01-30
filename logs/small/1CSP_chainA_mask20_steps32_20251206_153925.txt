@@ -1,0 +1,3036 @@
+=================================================================
+ESM3-FoldX Guided Generation Log
+Run Timestamp: 20251206_153925
+=================================================================
+
+--- RUN PARAMETERS ---
+PDB File: 1CSP.pdb
+Masking Percentage: 20.0%
+Decoding Steps: 32
+Samples per Step: 20
+
+--- SEQUENCE SETUP ---
+Wild-Type Sequence Length: 67
+Original Wild-Type Sequence:
+MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVTKEA
+
+Masked Template for Generation (13 masks):
+MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+=================================================================
+
+--- Step 1 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_VV_EA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 5] Partial Sequence: MLE_KVKWFNSEKGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_AEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV__EA
+[Candidate 11] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAA_V__EA
+[Candidate 13] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV__EA
+[Candidate 15] Partial Sequence: MLE_KVKWFNSSKGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DD_FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAA_V__EA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_VFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V__EA
+[Candidate 20] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV__EA
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:53 2025
+Total time spend: 15.00 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65A;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into ALA
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:53 2025
+Total time spend: 14.97 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:53 2025
+Total time spend: 15.01 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:53 2025
+Total time spend: 15.02 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:53 2025
+Total time spend: 15.00 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:53 2025
+Total time spend: 14.96 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65A;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into ALA
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 14.99 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 14.96 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 14.90 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 14.95 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.01 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 14.99 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.01 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65T;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = ARGA56 into LYS
+Mutating residue = LYSA65 into THR
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.02 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.01 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.02 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.12 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading RA56K,TA64V,KA65V;
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:39:54 2025
+Total time spend: 15.10 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSEKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading KA39R,RA56K,TA64V,KA65V;
+Residue to Mutate LYSA39 has residue index 38
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = LYSA39 into ARG
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:40:00 2025
+Total time spend: 21.67 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence MLEGKVKWFNSSKGF... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1CSP_Repair.pdb
+Output: ./1CSP_Repair.log
+
+BackHbond       =               -37.19
+SideHbond       =               -13.59
+Energy_VdW      =               -64.24
+Electro         =               0.08
+Energy_SolvP    =               81.11
+Energy_SolvH    =               -87.72
+Energy_vdwclash =               1.90
+energy_torsion  =               2.83
+backbone_vdwclash=              14.56
+Entropy_sidec   =               34.35
+Entropy_mainc   =               91.27
+water bonds     =               0.00
+helix dipole    =               0.00
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               0.00
+kn electrostatic=               0.00
+partial covalent interactions = 0.00
+Energy_Ionisation =             0.07
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  8.87
+
+Starting BuildModel
+Reading EA12S,RA56K,TA64V,KA65V;
+Residue to Mutate GLUA12 has residue index 11
+Residue to Mutate ARGA56 has residue index 55
+Residue to Mutate THRA64 has residue index 63
+Residue to Mutate LYSA65 has residue index 64
+Mutating residue = THRA64 into VAL
+Mutating residue = LYSA65 into VAL
+Mutating residue = GLUA12 into SER
+Mutating residue = ARGA56 into LYS
+Your file run OK
+End time of FoldX: Sat Dec  6 15:40:02 2025
+Total time spend: 23.09 seconds.
+validated file "1CSP_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVAEA
+  pTM: N/A
+  Score: 0.4595 | ddG: -0.459 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.2777 | ddG: -0.278 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVAEA
+  pTM: N/A
+  Score: 0.4595 | ddG: -0.459 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSSKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.4760 | ddG: -0.476 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVVEA
+  pTM: N/A
+  Score: 0.9018 | ddG: -0.902 kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.0282
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 4.92 s
+  - Scoring (CPU/FoldX):        27.83 s
+  - Total Step Time:              32.76 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_VFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGED__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGSD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DD_FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_VTTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_VTTEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DD_FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+[Candidate 20] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAA_V_TEA
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGEDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.0630 | ddG: -0.063 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGSDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.5564 | ddG: -0.556 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.3151 | ddG: -0.315 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVTTEA
+  pTM: N/A
+  Score: 0.0987 | ddG: -0.099 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVTTEA
+  pTM: N/A
+  Score: 0.0987 | ddG: -0.099 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.0282
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 2.38 s
+  - Scoring (CPU/FoldX):        27.26 s
+  - Total Step Time:              29.65 s
+
+--- Step 3 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGRD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGAD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 9] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVITEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DD_FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 13] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 15] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_VFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGGD__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNSTKGFG_IEVEG_D__FV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D__FVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+
+--- Step 3 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGRDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0434 | ddG: -1.043 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGADDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.4015 | ddG: -0.401 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVITEA
+  pTM: N/A
+  Score: 1.1793 | ddG: -1.179 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.3151 | ddG: -0.315 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGGDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.0319 | ddG: -0.032 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.1193 | ddG: -1.119 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDVFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.0282 | ddG: -1.028 kcal/mol
+
+------------------------- Step 3 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.2865
+This sequence will be used as the template for Step 4.
+-----------------------------------------------------------------
+Timing for Step 3:
+  - Candidate Generation (GPU): 2.44 s
+  - Scoring (CPU/FoldX):        27.12 s
+  - Total Step Time:              29.56 s
+
+--- Step 4 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVTTEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQD_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 9] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGAD_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGAD_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNSEKGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 13] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQD_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANV_TEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_D_IFV_FSAIQGEGF_TLEE_QAVSFEIVEGNRGPQAANV_TEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+
+--- Step 4 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVTTEA
+  pTM: N/A
+  Score: 0.3634 | ddG: -0.363 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGADDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.7474 | ddG: -0.747 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGADDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.7474 | ddG: -0.747 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6057 | ddG: -0.606 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+  pTM: N/A
+  Score: 0.9680 | ddG: -0.968 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+------------------------- Step 4 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.2865
+This sequence will be used as the template for Step 5.
+-----------------------------------------------------------------
+Timing for Step 4:
+  - Candidate Generation (GPU): 2.86 s
+  - Scoring (CPU/FoldX):        32.80 s
+  - Total Step Time:              35.66 s
+
+--- Step 5 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANV_TEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNSTKGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 8] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 10] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQDDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGSDDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVKTEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNSAKGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEG_DDIFV_FSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+
+--- Step 5 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6057 | ddG: -0.606 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2274 | ddG: -1.227 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6057 | ddG: -0.606 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6057 | ddG: -0.606 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGSDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.7309 | ddG: -0.731 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.2731 | ddG: -1.273 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSAKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6261 | ddG: -0.626 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+------------------------- Step 5 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.2865
+This sequence will be used as the template for Step 6.
+-----------------------------------------------------------------
+Timing for Step 5:
+  - Candidate Generation (GPU): 2.75 s
+  - Scoring (CPU/FoldX):        37.49 s
+  - Total Step Time:              40.24 s
+
+--- Step 6 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANV_TEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 5] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANV_TEA
+[Candidate 8] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNSSKGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGQDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVSTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNSAKGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVRTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNSDKGFG_IEVEG_DDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+
+--- Step 6 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6057 | ddG: -0.606 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSSKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6815 | ddG: -0.681 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVSTEA
+  pTM: N/A
+  Score: -0.1347 | ddG: 0.135 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSAKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.6261 | ddG: -0.626 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2865 | ddG: -1.286 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVRTEA
+  pTM: N/A
+  Score: 1.0336 | ddG: -1.034 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSDKGFGFIEVEGQDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.7492 | ddG: -0.749 kcal/mol
+
+------------------------- Step 6 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+Best Score in Step (=-ΔΔG): 1.5562
+This sequence will be used as the template for Step 7.
+-----------------------------------------------------------------
+Timing for Step 6:
+  - Candidate Generation (GPU): 2.52 s
+  - Scoring (CPU/FoldX):        37.99 s
+  - Total Step Time:              40.52 s
+
+--- Step 7 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNSQKGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 5] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVQTEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNRGPQAANV_TEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANV_TEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVSTEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANV_TEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVQTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNSEKGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 17] Partial Sequence: MLEGKVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNSQKGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANV_TEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNSMKGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANV_TEA
+
+--- Step 7 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSQKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.3753 | ddG: -1.375 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVQTEA
+  pTM: N/A
+  Score: 1.6341 | ddG: -1.634 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVKTEA
+  pTM: N/A
+  Score: 1.2592 | ddG: -1.259 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVSTEA
+  pTM: N/A
+  Score: 0.4471 | ddG: -0.447 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVQTEA
+  pTM: N/A
+  Score: 1.6341 | ddG: -1.634 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSQKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.3753 | ddG: -1.375 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.5562 | ddG: -1.556 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSMKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVKTEA
+  pTM: N/A
+  Score: 1.4575 | ddG: -1.457 kcal/mol
+
+------------------------- Step 7 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.6658
+This sequence will be used as the template for Step 8.
+-----------------------------------------------------------------
+Timing for Step 7:
+  - Candidate Generation (GPU): 2.51 s
+  - Scoring (CPU/FoldX):        36.82 s
+  - Total Step Time:              39.34 s
+
+--- Step 8 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFG_IEVEGKDDIFVHFSAIQGEGFRTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+
+--- Step 8 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.9377 | ddG: -0.938 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFRTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 0.9377 | ddG: -0.938 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+------------------------- Step 8 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.6658
+This sequence will be used as the template for Step 9.
+-----------------------------------------------------------------
+Timing for Step 8:
+  - Candidate Generation (GPU): 2.56 s
+  - Scoring (CPU/FoldX):        36.61 s
+  - Total Step Time:              39.17 s
+
+--- Step 9 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNSDKGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 4] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNSDKGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 9] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 10] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 11] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 13] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 17] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGF_TLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+
+--- Step 9 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSDKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.3250 | ddG: -1.325 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSDKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.3250 | ddG: -1.325 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+------------------------- Step 9 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.6658
+This sequence will be used as the template for Step 10.
+-----------------------------------------------------------------
+Timing for Step 9:
+  - Candidate Generation (GPU): 2.50 s
+  - Scoring (CPU/FoldX):        40.80 s
+  - Total Step Time:              43.30 s
+
+--- Step 10 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 3] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 4] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 6] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNSSKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 8] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 9] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEENQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEENQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 15] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 18] Partial Sequence: MLEAKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 19] Partial Sequence: MLEGKVKWFNS_KGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+
+--- Step 10 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSSKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.2603 | ddG: -1.260 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEENQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: -1.8986 | ddG: 1.899 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEENQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: -1.8986 | ddG: 1.899 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEAKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: -2.0033 | ddG: 2.003 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSEKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.6658 | ddG: -1.666 kcal/mol
+
+------------------------- Step 10 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.8032
+This sequence will be used as the template for Step 11.
+-----------------------------------------------------------------
+Timing for Step 10:
+  - Candidate Generation (GPU): 2.48 s
+  - Scoring (CPU/FoldX):        45.01 s
+  - Total Step Time:              47.49 s
+
+--- Step 11 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 2] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 4] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 6] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 8] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 9] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 11] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+[Candidate 12] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 15] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 16] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 18] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 19] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGN_GPQAANVVTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEE_QAVSFEIVEGNKGPQAANVVTEA
+
+--- Step 11 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+------------------------- Step 11 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.8032
+This sequence will be used as the template for Step 12.
+-----------------------------------------------------------------
+Timing for Step 11:
+  - Candidate Generation (GPU): 2.71 s
+  - Scoring (CPU/FoldX):        4.37 s
+  - Total Step Time:              7.08 s
+
+--- Step 12 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 2] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 3] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 4] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 5] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 6] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 7] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 8] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 9] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 10] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 11] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 12] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 13] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 14] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 15] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+[Candidate 16] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 17] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 18] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGN_GPQAANVVTEA
+[Candidate 19] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 20] Partial Sequence: MLE_KVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+
+--- Step 12 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+  pTM: N/A
+  Score: 1.3083 | ddG: -1.308 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+------------------------- Step 12 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.8032
+This sequence will be used as the template for Step 13.
+-----------------------------------------------------------------
+Timing for Step 12:
+  - Candidate Generation (GPU): 2.47 s
+  - Scoring (CPU/FoldX):        31.10 s
+  - Total Step Time:              33.57 s
+
+--- Step 13 Partial Sequences ---
+[Candidate 1] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 2] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 3] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 4] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 5] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 6] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 7] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 8] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 9] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 10] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 11] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 12] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 13] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 14] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 15] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 16] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 17] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 18] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+[Candidate 19] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+[Candidate 20] Partial Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+
+--- Step 13 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+  pTM: N/A
+  Score: 1.8032 | ddG: -1.803 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+  pTM: N/A
+  Score: 1.3083 | ddG: -1.308 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNRGPQAANVVTEA
+  pTM: N/A
+  Score: 1.3083 | ddG: -1.308 kcal/mol
+
+------------------------- Step 13 Summary -------------------------
+Best Candidate in Step:
+MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+Best Score in Step (=-ΔΔG): 1.8032
+This sequence will be used as the template for Step 14.
+-----------------------------------------------------------------
+Timing for Step 13:
+  - Candidate Generation (GPU): 2.83 s
+  - Scoring (CPU/FoldX):        4.33 s
+  - Total Step Time:              7.16 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 13) ---
+Score (=-ΔΔG): 1.8032
+FoldX ΔΔG vs. Wild-Type: -1.8032 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 10
+Optimized Sequence:
+MLEGKVKWFNSTKGFGFIEVEGKDDIFVHFSAIQGEGFKTLEEGQAVSFEIVEGNKGPQAANVVTEA
+
+Final Score (=-ΔΔG): 1.8032
+Final FoldX ΔΔG vs. Wild-Type: -1.8032 kcal/mol
+===================================

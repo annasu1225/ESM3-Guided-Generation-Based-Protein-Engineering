@@ -1,0 +1,1529 @@
+=================================================================
+ESM3-FoldX Guided Generation Log
+Run Timestamp: 20251205_042043
+=================================================================
+
+--- RUN PARAMETERS ---
+PDB File: 1ZNJ.pdb
+Masking Percentage: 40.0%
+Decoding Steps: 16
+Samples per Step: 20
+
+--- SEQUENCE SETUP ---
+Wild-Type Sequence Length: 21
+Original Wild-Type Sequence:
+GIVEQCCTSICSLYQLENYCN
+
+Masked Template for Generation (8 masks):
+G__EQ__TS_CS__QLE_YCN
+=================================================================
+
+--- Step 1 Partial Sequences ---
+[Candidate 1] Partial Sequence: G_VEQ__TS_CS__QLE_YCN
+[Candidate 2] Partial Sequence: G__EQ__TSRCS__QLE_YCN
+[Candidate 3] Partial Sequence: G__EQ__TS_CSL_QLE_YCN
+[Candidate 4] Partial Sequence: G_IEQ__TS_CS__QLE_YCN
+[Candidate 5] Partial Sequence: G__EQC_TS_CS__QLE_YCN
+[Candidate 6] Partial Sequence: G__EQ__TS_CS_WQLE_YCN
+[Candidate 7] Partial Sequence: G__EQC_TS_CS__QLE_YCN
+[Candidate 8] Partial Sequence: G_LEQ__TS_CS__QLE_YCN
+[Candidate 9] Partial Sequence: G__EQ__TSICS__QLE_YCN
+[Candidate 10] Partial Sequence: G__EQ_CTS_CS__QLE_YCN
+[Candidate 11] Partial Sequence: G__EQ__TSICS__QLE_YCN
+[Candidate 12] Partial Sequence: G__EQC_TS_CS__QLE_YCN
+[Candidate 13] Partial Sequence: G__EQ__TS_CSL_QLE_YCN
+[Candidate 14] Partial Sequence: G__EQ_CTS_CS__QLE_YCN
+[Candidate 15] Partial Sequence: G__EQC_TS_CS__QLE_YCN
+[Candidate 16] Partial Sequence: G__EQ__TS_CS__QLENYCN
+[Candidate 17] Partial Sequence: G__EQ__TS_CS_YQLE_YCN
+[Candidate 18] Partial Sequence: G__EQ__TS_CSR_QLE_YCN
+[Candidate 19] Partial Sequence: G__EQ__TS_CSV_QLE_YCN
+[Candidate 20] Partial Sequence: GV_EQ__TS_CS__QLE_YCN
+
+--- FOLDX Log for sequence GIVEQCCTSICSVYQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading LA13V;
+Residue to Mutate LEUA13 has residue index 12
+Mutating residue = LEUA13 into VAL
+Your file run OK
+End time of FoldX: Fri Dec  5 04:21:44 2025
+Total time spend: 3.61 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GILEQCCTSICSLYQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading VA3L;
+Residue to Mutate VALA3 has residue index 2
+Mutating residue = VALA3 into LEU
+Your file run OK
+End time of FoldX: Fri Dec  5 04:21:45 2025
+Total time spend: 4.12 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIIEQCCTSICSLYQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading VA3I;
+Residue to Mutate VALA3 has residue index 2
+Mutating residue = VALA3 into ILE
+Your file run OK
+End time of FoldX: Fri Dec  5 04:21:45 2025
+Total time spend: 4.16 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GVVEQCCTSICSLYQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading IA2V;
+Residue to Mutate ILEA2 has residue index 1
+Mutating residue = ILEA2 into VAL
+Your file run OK
+End time of FoldX: Fri Dec  5 04:21:45 2025
+Total time spend: 4.30 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIVEQCCTSRCSLYQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading IA10R;
+Residue to Mutate ILEA10 has residue index 9
+Mutating residue = ILEA10 into ARG
+Your file run OK
+End time of FoldX: Fri Dec  5 04:21:48 2025
+Total time spend: 6.96 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GVVEQCCTSICSRYQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading IA2V,LA13R;
+Residue to Mutate ILEA2 has residue index 1
+Residue to Mutate LEUA13 has residue index 12
+Mutating residue = ILEA2 into VAL
+Mutating residue = LEUA13 into ARG
+Your file run OK
+End time of FoldX: Fri Dec  5 04:21:51 2025
+Total time spend: 9.84 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- FOLDX Log for sequence GIIEQCCTSRCSLWQ... ---
+STDOUT:
+   ********************************************
+   ***                                      ***
+   ***             FoldX 4 (c)              ***
+   ***                                      ***
+   ***     code by the FoldX Consortium     ***
+   ***                                      ***
+   ***     Jesper Borg, Frederic Rousseau   ***
+   ***    Joost Schymkowitz, Luis Serrano   ***
+   ***    Peter Vanhee, Erik Verschueren    ***
+   ***     Lies Baeten, Javier Delgado      ***
+   ***       and Francois Stricher          ***
+   *** and any other of the 9! permutations ***
+   ***   based on an original concept by    ***
+   ***   Raphael Guerois and Luis Serrano   ***
+   ********************************************
+
+1 models read: 1ZNJ_Repair.pdb
+Output: ./1ZNJ_Repair.log
+
+BackHbond       =               -181.69
+SideHbond       =               -55.31
+Energy_VdW      =               -345.55
+Electro         =               -2.94
+Energy_SolvP    =               466.39
+Energy_SolvH    =               -458.79
+Energy_vdwclash =               17.69
+energy_torsion  =               13.49
+backbone_vdwclash=              262.94
+Entropy_sidec   =               190.94
+Entropy_mainc   =               417.84
+water bonds     =               0.00
+helix dipole    =               2.63
+loop_entropy    =               0.00
+cis_bond        =               0.00
+disulfide       =               -44.15
+kn electrostatic=               0.06
+partial covalent interactions = -54.17
+Energy_Ionisation =             1.02
+Entropy Complex =               0.00
+-----------------------------------------------------------
+Total          = 				  -32.51
+
+Starting BuildModel
+Reading VA3I,IA10R,YA14W;
+Residue to Mutate VALA3 has residue index 2
+Residue to Mutate ILEA10 has residue index 9
+Residue to Mutate TYRA14 has residue index 13
+Mutating residue = VALA3 into ILE
+Mutating residue = TYRA14 into TRP
+Mutating residue = ILEA10 into ARG
+Your file run OK
+End time of FoldX: Fri Dec  5 04:22:01 2025
+Total time spend: 19.96 seconds.
+validated file "1ZNJ_Repair_1.pdb" => successfully finished
+Cleaning BuildModel...DONE
+
+STDERR:
+
+---------------------------------------------------
+
+--- Step 1 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GIVEQCCTSRCSLYQLENYCN
+  pTM: N/A
+  Score: -0.5729 | ddG: 0.573 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GIIEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 1.0227 | ddG: -1.023 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GIIEQCCTSRCSLWQLENYCN
+  pTM: N/A
+  Score: -0.0336 | ddG: 0.034 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GIVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -0.0000 | ddG: 0.000 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GVVEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: -2.3849 | ddG: 2.385 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GIVEQCCTSICSVYQLENYCN
+  pTM: N/A
+  Score: -2.1418 | ddG: 2.142 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GVVEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: -1.4987 | ddG: 1.499 kcal/mol
+
+------------------------- Step 1 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSLYQLENYCN
+Best Score in Step (=-ΔΔG): 2.2875
+This sequence will be used as the template for Step 2.
+-----------------------------------------------------------------
+Timing for Step 1:
+  - Candidate Generation (GPU): 42.37 s
+  - Scoring (CPU/FoldX):        26.01 s
+  - Total Step Time:              68.39 s
+
+--- Step 2 Partial Sequences ---
+[Candidate 1] Partial Sequence: G_LEQ__TS_CSL_QLE_YCN
+[Candidate 2] Partial Sequence: G_LEQ__TSICS__QLE_YCN
+[Candidate 3] Partial Sequence: G_LEQ_ATS_CS__QLE_YCN
+[Candidate 4] Partial Sequence: G_LEQ__TS_CS_YQLE_YCN
+[Candidate 5] Partial Sequence: G_LEQ__TSDCS__QLE_YCN
+[Candidate 6] Partial Sequence: G_LEQ__TS_CS_WQLE_YCN
+[Candidate 7] Partial Sequence: G_LEQ__TS_CS__QLEAYCN
+[Candidate 8] Partial Sequence: G_LEQ_CTS_CS__QLE_YCN
+[Candidate 9] Partial Sequence: G_LEQ__TS_CS_RQLE_YCN
+[Candidate 10] Partial Sequence: G_LEQ__TS_CS_QQLE_YCN
+[Candidate 11] Partial Sequence: G_LEQC_TS_CS__QLE_YCN
+[Candidate 12] Partial Sequence: G_LEQC_TS_CS__QLE_YCN
+[Candidate 13] Partial Sequence: G_LEQ_TTS_CS__QLE_YCN
+[Candidate 14] Partial Sequence: G_LEQ__TS_CSL_QLE_YCN
+[Candidate 15] Partial Sequence: G_LEQ__TS_CS__QLENYCN
+[Candidate 16] Partial Sequence: G_LEQ__TSICS__QLE_YCN
+[Candidate 17] Partial Sequence: G_LEQ__TSXCS__QLE_YCN
+[Candidate 18] Partial Sequence: G_LEQC_TS_CS__QLE_YCN
+[Candidate 19] Partial Sequence: G_LEQ__TSPCS__QLE_YCN
+[Candidate 20] Partial Sequence: G_LEQ__TS_CSL_QLE_YCN
+
+--- Step 2 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GSLEQLCTSLCSLEQLESYCN
+  pTM: N/A
+  Score: -3.3885 | ddG: 3.388 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GILEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: 2.6486 | ddG: -2.649 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GILEQCATSRCSLEQLEKYCN
+  pTM: N/A
+  Score: -0.6321 | ddG: 0.632 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GILEQCLTSSCSLYQLENYCN
+  pTM: N/A
+  Score: -3.6056 | ddG: 3.606 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GILEQCCTSDCSLYQLENYCN
+  pTM: N/A
+  Score: 0.7807 | ddG: -0.781 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GPLEQCCTSGCSLWQLEKYCN
+  pTM: N/A
+  Score: -0.9973 | ddG: 0.997 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSLYQLEAYCN
+  pTM: N/A
+  Score: 2.2269 | ddG: -2.227 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GQLEQCCTSGCSRGQLEQYCN
+  pTM: N/A
+  Score: -4.3966 | ddG: 4.397 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GILEQCCTSSCSLRQLENYCN
+  pTM: N/A
+  Score: 0.2670 | ddG: -0.267 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GILEQCCTSRCSLQQLENYCN
+  pTM: N/A
+  Score: 1.5086 | ddG: -1.509 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GILEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: 2.6486 | ddG: -2.649 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GILEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: 2.6486 | ddG: -2.649 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GILEQCTTSICSRYQLENYCN
+  pTM: N/A
+  Score: -4.1723 | ddG: 4.172 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GSLEQLCTSLCSLEQLESYCN
+  pTM: N/A
+  Score: -3.3885 | ddG: 3.388 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GILEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: 2.6486 | ddG: -2.649 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GQLEQLCTSXCSRYQLEKYCN
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: 2.6486 | ddG: -2.649 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GILEQCCTSPCSLAQLENYCN
+  pTM: N/A
+  Score: 1.7021 | ddG: -1.702 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GSLEQLCTSLCSLEQLESYCN
+  pTM: N/A
+  Score: -3.3885 | ddG: 3.388 kcal/mol
+
+------------------------- Step 2 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRYQLENYCN
+Best Score in Step (=-ΔΔG): 2.6486
+This sequence will be used as the template for Step 3.
+-----------------------------------------------------------------
+Timing for Step 2:
+  - Candidate Generation (GPU): 23.29 s
+  - Scoring (CPU/FoldX):        61.02 s
+  - Total Step Time:              84.31 s
+
+--- Step 3 Partial Sequences ---
+[Candidate 1] Partial Sequence: GILEQ__TSICS__QLE_YCN
+[Candidate 2] Partial Sequence: GILEQ__TSICS__QLE_YCN
+[Candidate 3] Partial Sequence: G_LEQ_CTSICS__QLE_YCN
+[Candidate 4] Partial Sequence: G_LEQ__TSICSR_QLE_YCN
+[Candidate 5] Partial Sequence: G_LEQ__TSICSK_QLE_YCN
+[Candidate 6] Partial Sequence: G_LEQ__TSICSF_QLE_YCN
+[Candidate 7] Partial Sequence: GILEQ__TSICS__QLE_YCN
+[Candidate 8] Partial Sequence: G_LEQ__TSICS__QLENYCN
+[Candidate 9] Partial Sequence: G_LEQ__TSICS_TQLE_YCN
+[Candidate 10] Partial Sequence: GXLEQ__TSICS__QLE_YCN
+[Candidate 11] Partial Sequence: G_LEQ__TSICS_EQLE_YCN
+[Candidate 12] Partial Sequence: G_LEQ__TSICS_QQLE_YCN
+[Candidate 13] Partial Sequence: G_LEQC_TSICS__QLE_YCN
+[Candidate 14] Partial Sequence: G_LEQ__TSICSK_QLE_YCN
+[Candidate 15] Partial Sequence: GCLEQ__TSICS__QLE_YCN
+[Candidate 16] Partial Sequence: G_LEQ__TSICS_EQLE_YCN
+[Candidate 17] Partial Sequence: G_LEQ__TSICS_EQLE_YCN
+[Candidate 18] Partial Sequence: GILEQ__TSICS__QLE_YCN
+[Candidate 19] Partial Sequence: G_LEQ__TSICSL_QLE_YCN
+[Candidate 20] Partial Sequence: GILEQ__TSICS__QLE_YCN
+
+--- Step 3 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GQLEQCCTSICSRGQLEQYCN
+  pTM: N/A
+  Score: -2.5960 | ddG: 2.596 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GQLEQCCTSICSRSQLEKYCN
+  pTM: N/A
+  Score: -2.4782 | ddG: 2.478 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GQLEQCCTSICSKEQLEKYCN
+  pTM: N/A
+  Score: -0.3036 | ddG: 0.304 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GLLEQLLTSICSFLQLELYCN
+  pTM: N/A
+  Score: -3.9621 | ddG: 3.962 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GQLEQCCTSICSIYQLENYCN
+  pTM: N/A
+  Score: -2.9615 | ddG: 2.962 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GXLEQCCTSICSRYQLEKYCN
+  pTM: N/A
+  Score: -inf | ddG: inf kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GSLEQLLTSICSLEQLEKYCN
+  pTM: N/A
+  Score: -5.4699 | ddG: 5.470 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GQLEQCCTSICSLQQLEKYCN
+  pTM: N/A
+  Score: -1.5454 | ddG: 1.545 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GILEQCCTSICSRYQLENYCN
+  pTM: N/A
+  Score: 2.6486 | ddG: -2.649 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GQLEQCCTSICSKEQLEKYCN
+  pTM: N/A
+  Score: -0.3036 | ddG: 0.304 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GCLEQCCTSICSLEQLEKYCN
+  pTM: N/A
+  Score: 0.4194 | ddG: -0.419 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GSLEQLLTSICSLEQLEKYCN
+  pTM: N/A
+  Score: -5.4699 | ddG: 5.470 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GSLEQLLTSICSLEQLEKYCN
+  pTM: N/A
+  Score: -5.4699 | ddG: 5.470 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GSLEQLLTSICSLLQLELYCN
+  pTM: N/A
+  Score: -7.1982 | ddG: 7.198 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GILEQCCTSICSLYQLENYCN
+  pTM: N/A
+  Score: 2.2875 | ddG: -2.288 kcal/mol
+
+------------------------- Step 3 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRTQLENYCN
+Best Score in Step (=-ΔΔG): 2.8380
+This sequence will be used as the template for Step 4.
+-----------------------------------------------------------------
+Timing for Step 3:
+  - Candidate Generation (GPU): 21.11 s
+  - Scoring (CPU/FoldX):        52.64 s
+  - Total Step Time:              73.75 s
+
+--- Step 4 Partial Sequences ---
+[Candidate 1] Partial Sequence: GILEQ__TSICS_TQLE_YCN
+[Candidate 2] Partial Sequence: G_LEQ__TSICSLTQLE_YCN
+[Candidate 3] Partial Sequence: G_LEQ__TSICS_TQLENYCN
+[Candidate 4] Partial Sequence: GILEQ__TSICS_TQLE_YCN
+[Candidate 5] Partial Sequence: G_LEQC_TSICS_TQLE_YCN
+[Candidate 6] Partial Sequence: G_LEQC_TSICS_TQLE_YCN
+[Candidate 7] Partial Sequence: GILEQ__TSICS_TQLE_YCN
+[Candidate 8] Partial Sequence: G_LEQ__TSICS_TQLENYCN
+[Candidate 9] Partial Sequence: G_LEQ__TSICSRTQLE_YCN
+[Candidate 10] Partial Sequence: G_LEQ__TSICSLTQLE_YCN
+[Candidate 11] Partial Sequence: G_LEQ__TSICSLTQLE_YCN
+[Candidate 12] Partial Sequence: G_LEQ__TSICS_TQLETYCN
+[Candidate 13] Partial Sequence: G_LEQC_TSICS_TQLE_YCN
+[Candidate 14] Partial Sequence: G_LEQ__TSICS_TQLENYCN
+[Candidate 15] Partial Sequence: G_LEQ_CTSICS_TQLE_YCN
+[Candidate 16] Partial Sequence: G_LEQC_TSICS_TQLE_YCN
+[Candidate 17] Partial Sequence: G_LEQ__TSICSLTQLE_YCN
+[Candidate 18] Partial Sequence: G_LEQ__TSICSRTQLE_YCN
+[Candidate 19] Partial Sequence: G_LEQ__TSICSYTQLE_YCN
+[Candidate 20] Partial Sequence: G_LEQC_TSICS_TQLE_YCN
+
+--- Step 4 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GILEQCCTSICSLTQLENYCN
+  pTM: N/A
+  Score: 2.0044 | ddG: -2.004 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GLLEQLLTSICSLTQLELYCN
+  pTM: N/A
+  Score: -5.4507 | ddG: 5.451 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GILEQCCTSICSLTQLENYCN
+  pTM: N/A
+  Score: 2.0044 | ddG: -2.004 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSLTQLENYCN
+  pTM: N/A
+  Score: 2.0044 | ddG: -2.004 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GLLEQLLTSICSLTQLELYCN
+  pTM: N/A
+  Score: -5.4507 | ddG: 5.451 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GLLEQLLTSICSLTQLELYCN
+  pTM: N/A
+  Score: -5.4507 | ddG: 5.451 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GLLEQLLTSICSLTQLELYCN
+  pTM: N/A
+  Score: -5.4507 | ddG: 5.451 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GQLEQCCTSICSYTQLEKYCN
+  pTM: N/A
+  Score: -1.8375 | ddG: 1.838 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GILEQCCTSICSRTQLENYCN
+  pTM: N/A
+  Score: 2.8380 | ddG: -2.838 kcal/mol
+
+------------------------- Step 4 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRTQLETYCN
+Best Score in Step (=-ΔΔG): 3.1409
+This sequence will be used as the template for Step 5.
+-----------------------------------------------------------------
+Timing for Step 4:
+  - Candidate Generation (GPU): 20.85 s
+  - Scoring (CPU/FoldX):        42.45 s
+  - Total Step Time:              63.30 s
+
+--- Step 5 Partial Sequences ---
+[Candidate 1] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 2] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 3] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 4] Partial Sequence: GILEQ__TSICS_TQLETYCN
+[Candidate 5] Partial Sequence: GVLEQ__TSICS_TQLETYCN
+[Candidate 6] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 7] Partial Sequence: G_LEQ__TSICSRTQLETYCN
+[Candidate 8] Partial Sequence: G_LEQ__TSICSRTQLETYCN
+[Candidate 9] Partial Sequence: G_LEQ__TSICSKTQLETYCN
+[Candidate 10] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 11] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 12] Partial Sequence: G_LEQC_TSICS_TQLETYCN
+[Candidate 13] Partial Sequence: GLLEQ__TSICS_TQLETYCN
+[Candidate 14] Partial Sequence: G_LEQ_CTSICS_TQLETYCN
+[Candidate 15] Partial Sequence: G_LEQ_CTSICS_TQLETYCN
+[Candidate 16] Partial Sequence: G_LEQ__TSICSLTQLETYCN
+[Candidate 17] Partial Sequence: G_LEQ__TSICSLTQLETYCN
+[Candidate 18] Partial Sequence: GILEQ__TSICS_TQLETYCN
+[Candidate 19] Partial Sequence: GILEQ__TSICS_TQLETYCN
+[Candidate 20] Partial Sequence: GILEQ__TSICS_TQLETYCN
+
+--- Step 5 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GVLEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 1.4005 | ddG: -1.400 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GQLEQCCTSICSKTQLETYCN
+  pTM: N/A
+  Score: -0.9991 | ddG: 0.999 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GLLEQLLTSICSLTQLETYCN
+  pTM: N/A
+  Score: -7.5016 | ddG: 7.502 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GLLEQLLTSICSLTQLETYCN
+  pTM: N/A
+  Score: -7.5016 | ddG: 7.502 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GLLEQLLTSICSLTQLETYCN
+  pTM: N/A
+  Score: -7.5016 | ddG: 7.502 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+------------------------- Step 5 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRTQLETYCN
+Best Score in Step (=-ΔΔG): 3.1409
+This sequence will be used as the template for Step 6.
+-----------------------------------------------------------------
+Timing for Step 5:
+  - Candidate Generation (GPU): 20.38 s
+  - Scoring (CPU/FoldX):        27.78 s
+  - Total Step Time:              48.16 s
+
+--- Step 6 Partial Sequences ---
+[Candidate 1] Partial Sequence: GILEQC_TSICS_TQLETYCN
+[Candidate 2] Partial Sequence: GILEQC_TSICS_TQLETYCN
+[Candidate 3] Partial Sequence: GILEQC_TSICS_TQLETYCN
+[Candidate 4] Partial Sequence: G_LEQCCTSICS_TQLETYCN
+[Candidate 5] Partial Sequence: G_LEQC_TSICSRTQLETYCN
+[Candidate 6] Partial Sequence: G_LEQC_TSICSKTQLETYCN
+[Candidate 7] Partial Sequence: G_LEQCCTSICS_TQLETYCN
+[Candidate 8] Partial Sequence: G_LEQCCTSICS_TQLETYCN
+[Candidate 9] Partial Sequence: G_LEQC_TSICSRTQLETYCN
+[Candidate 10] Partial Sequence: G_LEQCCTSICS_TQLETYCN
+[Candidate 11] Partial Sequence: G_LEQCCTSICS_TQLETYCN
+[Candidate 12] Partial Sequence: GILEQC_TSICS_TQLETYCN
+[Candidate 13] Partial Sequence: G_LEQCCTSICS_TQLETYCN
+[Candidate 14] Partial Sequence: G_LEQC_TSICSPTQLETYCN
+[Candidate 15] Partial Sequence: G_LEQC_TSICSRTQLETYCN
+[Candidate 16] Partial Sequence: G_LEQC_TSICSKTQLETYCN
+[Candidate 17] Partial Sequence: G_LEQC_TSICSLTQLETYCN
+[Candidate 18] Partial Sequence: GILEQC_TSICS_TQLETYCN
+[Candidate 19] Partial Sequence: G_LEQC_TSICSLTQLETYCN
+[Candidate 20] Partial Sequence: GLLEQC_TSICS_TQLETYCN
+
+--- Step 6 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GILEQCCTSICSKTQLETYCN
+  pTM: N/A
+  Score: 2.6148 | ddG: -2.615 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GILEQCCTSICSPTQLETYCN
+  pTM: N/A
+  Score: 1.6701 | ddG: -1.670 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GILEQCCTSICSKTQLETYCN
+  pTM: N/A
+  Score: 2.6148 | ddG: -2.615 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GILEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 2.2617 | ddG: -2.262 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GLLEQCCTSICSLTQLETYCN
+  pTM: N/A
+  Score: 1.4435 | ddG: -1.443 kcal/mol
+
+------------------------- Step 6 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRTQLETYCN
+Best Score in Step (=-ΔΔG): 3.1409
+This sequence will be used as the template for Step 7.
+-----------------------------------------------------------------
+Timing for Step 6:
+  - Candidate Generation (GPU): 20.44 s
+  - Scoring (CPU/FoldX):        22.68 s
+  - Total Step Time:              43.12 s
+
+--- Step 7 Partial Sequences ---
+[Candidate 1] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 2] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 3] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 4] Partial Sequence: GLLEQC_TSICSRTQLETYCN
+[Candidate 5] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 6] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 7] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 8] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 9] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 10] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 11] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 12] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 13] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+[Candidate 14] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 15] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 16] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 17] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 18] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 19] Partial Sequence: GILEQC_TSICSRTQLETYCN
+[Candidate 20] Partial Sequence: G_LEQCCTSICSRTQLETYCN
+
+--- Step 7 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GLLEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: -0.0301 | ddG: 0.030 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+------------------------- Step 7 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRTQLETYCN
+Best Score in Step (=-ΔΔG): 3.1409
+This sequence will be used as the template for Step 8.
+-----------------------------------------------------------------
+Timing for Step 7:
+  - Candidate Generation (GPU): 19.57 s
+  - Scoring (CPU/FoldX):        24.24 s
+  - Total Step Time:              43.81 s
+
+--- Step 8 Partial Sequences ---
+[Candidate 1] Partial Sequence: GVLEQCCTSICSRTQLETYCN
+[Candidate 2] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 3] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 4] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 5] Partial Sequence: GVLEQCCTSICSRTQLETYCN
+[Candidate 6] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 7] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 8] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 9] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 10] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 11] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 12] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 13] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 14] Partial Sequence: GVLEQCCTSICSRTQLETYCN
+[Candidate 15] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 16] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 17] Partial Sequence: GVLEQCCTSICSRTQLETYCN
+[Candidate 18] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 19] Partial Sequence: GILEQCCTSICSRTQLETYCN
+[Candidate 20] Partial Sequence: GILEQCCTSICSRTQLETYCN
+
+--- Step 8 Denoised Results ---
+
+[Candidate 1]
+  Denoised Sequence: GVLEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: -0.0683 | ddG: 0.068 kcal/mol
+
+[Candidate 2]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 3]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 4]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 5]
+  Denoised Sequence: GVLEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: -0.0683 | ddG: 0.068 kcal/mol
+
+[Candidate 6]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 7]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 8]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 9]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 10]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 11]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 12]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 13]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 14]
+  Denoised Sequence: GVLEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: -0.0683 | ddG: 0.068 kcal/mol
+
+[Candidate 15]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 16]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 17]
+  Denoised Sequence: GVLEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: -0.0683 | ddG: 0.068 kcal/mol
+
+[Candidate 18]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 19]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+[Candidate 20]
+  Denoised Sequence: GILEQCCTSICSRTQLETYCN
+  pTM: N/A
+  Score: 3.1409 | ddG: -3.141 kcal/mol
+
+------------------------- Step 8 Summary -------------------------
+Best Candidate in Step:
+GILEQCCTSICSRTQLETYCN
+Best Score in Step (=-ΔΔG): 3.1409
+This sequence will be used as the template for Step 9.
+-----------------------------------------------------------------
+Timing for Step 8:
+  - Candidate Generation (GPU): 19.70 s
+  - Scoring (CPU/FoldX):        23.50 s
+  - Total Step Time:              43.20 s
+
+
+===================================
+   FINAL RESULTS SUMMARY
+===================================
+
+--- Best from Final Step (Step 8) ---
+Score (=-ΔΔG): 3.1409
+FoldX ΔΔG vs. Wild-Type: -3.1409 kcal/mol
+
+--- Best Overall Result ---
+Found in Step: 4
+Optimized Sequence:
+GILEQCCTSICSRTQLETYCN
+
+Final Score (=-ΔΔG): 3.1409
+Final FoldX ΔΔG vs. Wild-Type: -3.1409 kcal/mol
+===================================
