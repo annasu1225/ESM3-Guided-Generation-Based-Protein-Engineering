@@ -17,10 +17,12 @@ import random
 import time
 import argparse
 import warnings
-from typing import Optional
+# from typing import Optional
+# from xmlrpc import client
 
 import torch
-from esm.models.esm3 import ESM3
+# from esm.models.esm3 import ESM3
+from esm.sdk import client
 from esm.sdk.api import ESMProtein
 from esm.utils.structure.protein_chain import ProteinChain
 
@@ -242,19 +244,30 @@ def main():
     num_gpus = torch.cuda.device_count()
     print("Available GPUs: {}".format(num_gpus))
     
-    model = ESM3.from_pretrained().float()
+    # model = ESM3.from_pretrained().float() 
+    # switch to the forge esm3-medium-2024-08 from esm3-sm-open-v1 for better performance
+    esm_token = os.environ.get('ESM_API_TOKEN')
+    print("esm_token:", esm_token)
+    if not esm_token:
+        raise ValueError(
+            "ESM_API_TOKEN environment variable not set. "
+            "Please set it with: export ESM_API_TOKEN='your_token_here'"
+        )
+    model = client(
+        model="esm3-medium-2024-08", url="https://forge.evolutionaryscale.ai", token=esm_token
+    )
     
-    # Use DataParallel for multi-GPU
-    if num_gpus > 1:
-        print("Using DataParallel across {} GPUs: {}".format(num_gpus, [torch.cuda.get_device_name(i) for i in range(num_gpus)]))
-        model = torch.nn.DataParallel(model)
-        model = model.to(device)
-    else:
-        model = model.to(device)
-        if num_gpus == 1:
-            print("Using single GPU: {}".format(torch.cuda.get_device_name(0)))
-        else:
-            print("Using CPU")
+    # Use DataPrallel for multi-GPU (comment this out if using the forge client model as it runs on server side)
+    # if num_gpus > 1:
+    #     print("Using DataParallel across {} GPUs: {}".format(num_gpus, [torch.cuda.get_device_name(i) for i in range(num_gpus)]))
+    #     model = torch.nn.DataParallel(model)
+    #     model = model.to(device)
+    # else:
+    #     model = model.to(device)
+    #     if num_gpus == 1:
+    #         print("Using single GPU: {}".format(torch.cuda.get_device_name(0)))
+    #     else:
+    #         print("Using CPU")
     
     # --- 4. Initialize Boltz Scorer ---
     print("\nInitializing Boltz scorer...")
@@ -339,4 +352,4 @@ if __name__ == "__main__":
 #   python main.py --smiles "CCO" --seq_length 256 --num_decoding_steps 32 --num_samples_per_step 20
 #
 # From wildtype:
-#   python main.py --smiles "NC1=Nc2n(cnc2C(=O)N1)[C@@H]3O[C@H](CO)[C@@H](O)[C@H]3O[P](O)(O)=O" --wildtype 1RNT A --masking_percentage 0.4 --num_decoding_steps 32 --num_samples_per_step 20
+#   python main.py --smiles "NC1=Nc2n(cnc2C(=O)N1)[C@@H]3O[C@H](CO)[C@@H](O)[C@H]3O[P](O)(O)=O" --wildtype 1RNT A --masking_percentage 0.4 --num_decoding_steps 1 --num_samples_per_step 2

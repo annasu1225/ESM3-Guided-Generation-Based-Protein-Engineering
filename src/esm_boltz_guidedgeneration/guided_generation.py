@@ -48,7 +48,7 @@ class ESM3GuidedDecoding:
             self.tokenizers = client.tokenizers
             self._is_data_parallel = False
         elif isinstance(client, ESM3ForgeInferenceClient):
-            self.tokenizers = get_esm3_model_tokenizers(client.model)
+            self.tokenizers = get_esm3_model_tokenizers()
             self._is_data_parallel = False
         else:
             raise ValueError(
@@ -269,9 +269,9 @@ class ESM3GuidedDecoding:
         )
         assert not isinstance(denoised_protein_tensor_output, ESMProteinError)
         denoised_protein_tensor = denoised_protein_tensor_output.protein_tensor
-        output_track_tensor = getattr(denoised_protein_tensor, track)
+        output_track_tensor = getattr(denoised_protein_tensor, track).long()
         assert output_track_tensor is not None
-        track_tensor[mask_indices] = output_track_tensor[mask_indices]
+        track_tensor[mask_indices] = output_track_tensor[mask_indices].long()
         setattr(protein_tensor, track, track_tensor)
 
         return protein_tensor
