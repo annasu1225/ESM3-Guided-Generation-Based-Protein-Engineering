@@ -267,7 +267,10 @@ class ESM3GuidedDecoding:
         denoised_protein_tensor_output = self._model.forward_and_sample(
             protein_tensor, sampling_configuration=sampling_config
         )
-        assert not isinstance(denoised_protein_tensor_output, ESMProteinError)
+        if isinstance(denoised_protein_tensor_output, ESMProteinError):
+            print(f"[ERROR] ESM API returned an error during unmasking:")
+            print(f"  Error message: {denoised_protein_tensor_output.error_msg}")
+            raise RuntimeError(f"ESM API error: {denoised_protein_tensor_output.error_msg}")
         denoised_protein_tensor = denoised_protein_tensor_output.protein_tensor
         output_track_tensor = getattr(denoised_protein_tensor, track).long()
         assert output_track_tensor is not None
@@ -286,7 +289,10 @@ class ESM3GuidedDecoding:
                 structure=SamplingTrackConfig(temperature=temperature),
             ),
         )
-        assert not isinstance(denoised_protein_tensor_output, ESMProteinError)
+        if isinstance(denoised_protein_tensor_output, ESMProteinError):
+            print(f"[ERROR] ESM API returned an error during predict_denoised:")
+            print(f"  Error message: {denoised_protein_tensor_output.error_msg}")
+            raise RuntimeError(f"ESM API error: {denoised_protein_tensor_output.error_msg}")
         denoised_protein_tensor = denoised_protein_tensor_output.protein_tensor
         denoised_protein = self._model.decode(denoised_protein_tensor)
         assert not isinstance(denoised_protein, ESMProteinError)
