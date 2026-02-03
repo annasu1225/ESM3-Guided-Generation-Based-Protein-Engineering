@@ -257,18 +257,6 @@ def main():
         model="esm3-medium-2024-08", url="https://forge.evolutionaryscale.ai", token=esm_token
     )
     
-    # Use DataPrallel for multi-GPU (comment this out if using the forge client model as it runs on server side)
-    # if num_gpus > 1:
-    #     print("Using DataParallel across {} GPUs: {}".format(num_gpus, [torch.cuda.get_device_name(i) for i in range(num_gpus)]))
-    #     model = torch.nn.DataParallel(model)
-    #     model = model.to(device)
-    # else:
-    #     model = model.to(device)
-    #     if num_gpus == 1:
-    #         print("Using single GPU: {}".format(torch.cuda.get_device_name(0)))
-    #     else:
-    #         print("Using CPU")
-    
     # --- 4. Initialize Boltz Scorer ---
     print("\nInitializing Boltz scorer...")
     print("Cache directory: {}".format(cache_dir))

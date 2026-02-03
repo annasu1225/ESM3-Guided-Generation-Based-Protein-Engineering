@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#SBATCH --partition=gpu
+#SBATCH --partition=pi_gerstein_gpu
 #SBATCH --job-name=boltz_guided_gen
-#SBATCH -t 15:00:00
 #SBATCH -c 8
 #SBATCH --mem=64G
 #SBATCH --output=boltz_guided_generation_%j.out
@@ -10,6 +9,37 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mail-user=4752279178@vtext.com
 #SBATCH --mail-type=ALL
+
+# ====================
+# Parse Command Line Arguments
+# ====================
+# These are passed via sbatch --export or command line
+# Usage: sbatch --export=SMILES="...",PDB_ID="1RNT",CHAIN_ID="A" guided_generation.sh
+# Or parameters can be passed as arguments: sbatch guided_generation.sh "SMILES" "PDB_ID" "CHAIN_ID"
+
+# Check for command line arguments first, then environment variables
+if [ $# -ge 3 ]; then
+    SMILES="$1"
+    PDB_ID="$2"
+    CHAIN_ID="$3"
+    MASKING_PCT="${4:-0.4}"
+    NUM_DECODING_STEPS="${5:-32}"
+    NUM_SAMPLES="${6:-10}"
+    TIME_LIMIT="${7:-15:00:00}"
+elif [ -n "$SMILES" ] && [ -n "$PDB_ID" ] && [ -n "$CHAIN_ID" ]; then
+    # Use environment variables (set via --export)
+    MASKING_PCT="${MASKING_PCT:-0.4}"
+    NUM_DECODING_STEPS="${NUM_DECODING_STEPS:-32}"
+    NUM_SAMPLES="${NUM_SAMPLES:-10}"
+    TIME_LIMIT="${TIME_LIMIT:-15:00:00}"
+else
+    echo "ERROR: Missing required parameters!"
+    echo "Usage: sbatch --export=SMILES='...',PDB_ID='1RNT',CHAIN_ID='A',TIME_LIMIT='15:00:00' guided_generation.sh"
+    echo "   Or: sbatch guided_generation.sh 'SMILES' 'PDB_ID' 'CHAIN_ID' [MASKING_PCT] [NUM_DECODING_STEPS] [NUM_SAMPLES] [TIME_LIMIT]"
+    exit 1
+fi
+
+echo "Job Time Limit: $TIME_LIMIT"
 
 # ====================
 # Environment Setup
@@ -45,6 +75,14 @@ echo "Start Time: $(date)"
 echo "Working Directory: $SCRIPT_DIR"
 echo "GPU Log: $GPU_LOG"
 echo "=============================================="
+echo "Job Parameters:"
+echo "  PDB ID: $PDB_ID"
+echo "  Chain ID: $CHAIN_ID"
+echo "  SMILES: $SMILES"
+echo "  Masking %: $MASKING_PCT"
+echo "  Decoding Steps: $NUM_DECODING_STEPS"
+echo "  Samples per Step: $NUM_SAMPLES"
+echo "=============================================="
 
 # Print GPU info
 echo "GPU Information:"
@@ -69,11 +107,11 @@ echo "Starting Guided Generation..."
 echo ""
 
 python "${SCRIPT_DIR}/main.py" \
-    --smiles "NC1=Nc2n(cnc2C(=O)N1)[C@@H]3O[C@H](CO)[C@@H](O)[C@H]3O[P](O)(O)=O" \
-    --wildtype 1RNT A \
-    --masking_percentage 0.4 \
-    --num_decoding_steps 32 \
-    --num_samples_per_step 10
+    --smiles "$SMILES" \
+    --wildtype "$PDB_ID" "$CHAIN_ID" \
+    --masking_percentage "$MASKING_PCT" \
+    --num_decoding_steps "$NUM_DECODING_STEPS" \
+    --num_samples_per_step "$NUM_SAMPLES"
 
 PYTHON_EXIT_CODE=$?
 
