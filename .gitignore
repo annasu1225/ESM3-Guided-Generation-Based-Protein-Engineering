@@ -4,6 +4,9 @@
 # Ignore rotabase.txt anywhere
 **/rotabase.txt
 
+# Ignore Boltz cache directories anywhere
+**/boltz_cache/
+
 # Ignore FoldX cache directories anywhere
 **/foldx_cache/
 
