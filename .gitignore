@@ -26,4 +26,4 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Log files (optional - remove if you want to track logs)
-# logs/
+logs/
